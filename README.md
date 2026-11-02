@@ -6,6 +6,11 @@ A página inicial possui um mapa-múndi como referência visual e uma lista com 
 
 Cada integrante ficou responsável por um país e por um tema diferente. Por isso, as páginas possuem estruturas próprias, mas continuam ligadas pela navegação do Atlas.
 
+
+### Acesse o projeto
+
+🌐 [Explorar o Atlas](https://wellsdevx.github.io/Atlas_Project/)
+
 ## Países e temas
 
 - México — Música e Mitologia
@@ -32,3 +37,4 @@ As imagens estão na pasta `img`, separadas por país.
 
 - `sobre.html` — explicação geral do projeto.
 - `creditos.html` — integrantes e divisão das páginas.
+
