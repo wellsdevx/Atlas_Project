@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill="none" role="img" aria-label="Globo terrestre estilizado em azul">
+    <circle cx="180" cy="180" r="137" stroke="#47cfff" stroke-width="2"/>
+    <ellipse cx="180" cy="180" rx="61" ry="137" stroke="#47cfff" stroke-width="1.5"/>
+    <ellipse cx="180" cy="180" rx="110" ry="137" stroke="#47cfff" stroke-width="1" opacity=".48"/>
+    <path d="M43 180H317M61 112H299M61 248H299M180 43V317" stroke="#47cfff" stroke-width="1.5"/>
+    <circle cx="180" cy="180" r="151" stroke="#47cfff" stroke-dasharray="4 11" opacity=".35"/>
+    <circle cx="78" cy="94" r="5" fill="#b2f5ff"/>
+    <circle cx="249" cy="262" r="5" fill="#b2f5ff"/>
+</svg>
