@@ -1,104 +1,107 @@
+
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>Sobre - Atlas</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    </head>
-    <body style="font-family: Arial, sans-serif; margin: 0; color: #202A35; background-color: #F2F5F8;">
-        <!-- Cabeçalho e navegação principal -->
-        <header>
-            <nav>
-                <table style="background-color: #18324A; width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td style="padding: 12px; width: 40%;"><a href="index.html" style="color: white; text-decoration: none;"><span style="font-size: 32px;"><b>ATLAS</b></span></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="index.html" style="color: white; text-decoration: none;"><b>Início</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="index.html#mapa" style="color: white; text-decoration: none;"><b>Mapa</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="index.html#paises" style="color: white; text-decoration: none;"><b>Países</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="sobre.html" style="color: white; text-decoration: none;"><b>Sobre</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="creditos.html" style="color: white; text-decoration: none;"><b>Créditos</b></a></td>
-                    </tr>
-                </table>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre - Atlas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="site">
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="topo">
+            <div class="marca">
+                <h1><a href="index.html">ATLAS</a></h1>
+                <span class="subtitulo">Explore o Mundo</span>
+            </div>
+
+            <nav class="menu">
+                <a href="index.html">Início</a>
+                <a href="index.html#mapa">Mapa</a>
+                <a href="index.html#paises">Países</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="creditos.html">Créditos</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <!-- Conteúdo principal -->
-        <main>
-            <section>
-                <table style="background-color: #FFFFFF; margin-left: auto; margin-right: auto; width: 88%; border-collapse: collapse;">
-                    <tr>
-                        <td style="padding: 25px;">
-                            <h1 style="margin: 0; color: #18324A;">Sobre o Atlas</h1>
-                            <br>
-                            <br>
-                            <span style="font-size: 16px;">
-                                O Atlas é um projeto acadêmico criado para reunir diferentes países em um único site.
-                                A proposta é permitir que o usuário conheça assuntos relacionados à história, cultura,
-                                natureza, arte, gastronomia e outros temas através das páginas desenvolvidas pelo
-                                grupo.
-                            </span>
-                        </td>
-                    </tr>
-                </table>
+    <!-- Conteúdo principal -->
+    <main class="pagina">
+
+        <!-- Apresentação -->
+        <section class="cartao-pagina">
+            <p class="selo-secao">CONHEÇA O PROJETO</p>
+            <h1 class="titulo-pagina">Sobre o Atlas</h1>
+
+            <p class="descricao-pagina">
+                O Atlas é um projeto acadêmico criado
+                para reunir diferentes países em um único site.
+                A proposta é permitir que o usuário conheça
+                assuntos relacionados à história, cultura,
+                natureza, arte, gastronomia e outros temas
+                através das páginas desenvolvidas pelo grupo.
+            </p>
+        </section>
+
+        <!-- Informações do projeto -->
+        <div class="grade-pagina">
+
+            <section class="cartao-pagina">
+                <h2>Como funciona</h2>
+                <p>
+                    A página inicial funciona como ponto central
+                    da navegação. Nela existe um mapa-múndi
+                    usado como referência visual e uma lista
+                    com todos os países disponíveis.
+                </p>
+                <p>
+                    Ao selecionar um país, o usuário é levado
+                    para sua página correspondente.
+                </p>
             </section>
 
-            <section>
-                <table style="margin-left: auto; margin-right: auto; width: 88%; border-spacing: 15px;">
-                    <tr>
-                        <td style="background-color: #FFFFFF; vertical-align: top; padding: 20px; width: 50%;">
-                            <h2 style="margin: 0; color: #18324A;">Como funciona</h2>
-                            <br>
-                            <br>
-                            <span style="font-size: 16px;">
-                                A página inicial funciona como ponto central da navegação. Nela existe um mapa-múndi
-                                usado como referência visual e uma lista com todos os países disponíveis no projeto.
-                                <br>
-                                <br>
-                                Ao selecionar um destino na lista, o usuário é levado para a página correspondente.
-                            </span>
-                        </td>
-                        <td style="background-color: #FFFFFF; vertical-align: top; padding: 20px; width: 50%;">
-                            <h2 style="margin: 0; color: #18324A;">Estrutura das páginas</h2>
-                            <br>
-                            <br>
-                            <span style="font-size: 16px;">
-                                Cada país possui uma estrutura própria, criada de acordo com o tema escolhido por seu
-                                integrante.
-                                <br>
-                                <br>
-                                As páginas não precisam ser idênticas, mas mantêm elementos em comum como o nome
-                                Atlas, a navegação principal e cores relacionadas ao país.
-                            </span>
-                        </td>
-                    </tr>
-                </table>
+            <section class="cartao-pagina">
+                <h2>Estrutura das páginas</h2>
+                <p>
+                    Cada país possui uma estrutura própria,
+                    desenvolvida de acordo com o tema
+                    escolhido pelo integrante.
+                </p>
+                <p>
+                    As páginas compartilham o mesmo estilo
+                    visual, as cores principais e a navegação,
+                    mantendo seus conteúdos individuais.
+                </p>
             </section>
 
-            <section>
-                <table style="background-color: #FFFFFF; margin-left: auto; margin-right: auto; width: 88%; border-collapse: collapse;">
-                    <tr>
-                        <td style="text-align: center; padding: 25px;">
-                            <h2 style="margin: 0; color: #18324A;">Países presentes no projeto</h2>
-                            <br>
-                            <br>
-                            <span style="font-size: 32px;">🇲🇽 🇬🇷 🇪🇬 🇮🇹 🇨🇦 🇩🇪 🇨🇭 🇦🇺 🇯🇵 🇫🇷</span>
-                            <br>
-                            <br>
-                            <span style="font-size: 16px;">México, Grécia, Egito, Itália, Canadá, Alemanha, Suíça, Austrália, Japão e França.</span>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-        </main>
+        </div>
 
-        <!-- Rodapé -->
-        <footer>
-            <table style="background-color: #18324A; width: 100%; border-collapse: collapse;">
-                <tr>
-                    <td style="text-align: center; padding: 18px;"><span style="color: #FFFFFF; font-size: 16px;"><b>ATLAS - Sobre o Projeto</b></span></td>
-                </tr>
-            </table>
-        </footer>
-    </body>
+        <br>
+        <!-- Países disponíveis -->
+        <section class="cartao-pagina">
+            <h2>Países presentes no projeto</h2>
+
+            <p>
+                🇲🇽 México | 🇬🇷 Grécia | 🇪🇬 Egito |
+                🇮🇹 Itália | 🇨🇦 Canadá | 🇩🇪 Alemanha |
+                🇨🇭 Suíça | 🇦🇺 Austrália |
+                🇯🇵 Japão | 🇫🇷 França
+            </p>
+
+            <a class="botao" href="index.html#paises">
+                Explorar países
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>ATLAS - Sobre o Projeto</p>
+    </footer>
+
+</body>
 </html>

@@ -1,136 +1,209 @@
+
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>Créditos - Atlas</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    </head>
-    <body style="font-family: Arial, sans-serif; margin: 0; color: #202A35; background-color: #F2F5F8;">
-        <!-- Cabeçalho e navegação principal -->
-        <header>
-            <nav>
-                <table style="background-color: #18324A; width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td style="padding: 12px; width: 40%;"><a href="index.html" style="color: white; text-decoration: none;"><span style="font-size: 32px;"><b>ATLAS</b></span></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="index.html" style="color: white; text-decoration: none;"><b>Início</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="index.html#mapa" style="color: white; text-decoration: none;"><b>Mapa</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="index.html#paises" style="color: white; text-decoration: none;"><b>Países</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="sobre.html" style="color: white; text-decoration: none;"><b>Sobre</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="creditos.html" style="color: white; text-decoration: none;"><b>Créditos</b></a></td>
-                    </tr>
-                </table>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Créditos - Atlas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="site">
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="topo">
+            <div class="marca">
+                <h1><a href="index.html">ATLAS</a></h1>
+                <span class="subtitulo">Explore o Mundo</span>
+            </div>
+
+            <nav class="menu">
+                <a href="index.html">Início</a>
+                <a href="index.html#mapa">Mapa</a>
+                <a href="index.html#paises">Países</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="creditos.html">Créditos</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <!-- Conteúdo principal -->
-        <main>
-            <section>
-                <table style="background-color: #FFFFFF; margin-left: auto; margin-right: auto; width: 88%; border-collapse: collapse;">
-                    <tr>
-                        <td style="text-align: center; padding: 25px;">
-                            <h1 style="margin: 0; color: #18324A;">Créditos</h1>
-                            <br>
-                            <br>
-                            <span style="font-size: 16px;">Divisão dos integrantes e das páginas desenvolvidas no projeto Atlas.</span>
-                        </td>
-                    </tr>
+    <!-- Conteúdo -->
+    <main class="pagina">
+
+        <!-- Introdução -->
+        <section>
+            <p class="selo-secao">EQUIPE / PROJETO ATLAS</p>
+
+            <h1 class="titulo-pagina">
+                Quem fez parte dessa viagem?
+            </h1>
+
+            <p class="descricao-pagina">
+                O Atlas foi desenvolvido em equipe.
+                Cada integrante contribuiu para a
+                construção e organização do projeto.
+            </p>
+
+            <div class="numeros">
+                <div>
+                    <strong>09</strong>
+                    <small>Integrantes</small>
+                </div>
+
+                <div>
+                    <strong>10</strong>
+                    <small>Países</small>
+                </div>
+
+                <div>
+                    <strong>01</strong>
+                    <small>Projeto</small>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Tabela da equipe -->
+        <section>
+            <h2>Nossa equipe</h2>
+
+            <p class="descricao-pagina">
+                Conheça os responsáveis por cada
+                parte do projeto.
+            </p>
+
+            <div class="area-tabela">
+                <table class="tabela-creditos">
+                    <thead>
+                        <tr>
+                            <th>Integrante</th>
+                            <th>Responsabilidade</th>
+                            <th>Tema</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>🌎 Welder</td>
+                            <td>Estrutura geral e página inicial</td>
+                            <td>Navegação e identidade visual</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇲🇽 🇬🇷 Kelvin</td>
+                            <td>México e Grécia</td>
+                            <td>Música, mitologia e gastronomia</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇪🇬 Gustavo</td>
+                            <td>Egito</td>
+                            <td>Monumentos históricos</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇨🇦 🇮🇹 Matheus</td>
+                            <td>Canadá e Itália</td>
+                            <td>Natureza e história</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇩🇪 Gabriel</td>
+                            <td>Alemanha</td>
+                            <td>Guerras e impactos políticos</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇨🇭 Maria Eduarda Almeida da Rocha</td>
+                            <td>Suíça</td>
+                            <td>Turismo e oportunidades profissionais</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇦🇺 Daniel</td>
+                            <td>Austrália</td>
+                            <td>Biodiversidade</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇯🇵 Lucas</td>
+                            <td>Japão</td>
+                            <td>Evolução das artes visuais</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇫🇷 Maria Eduarda Cabral</td>
+                            <td>França</td>
+                            <td>Museus, artistas e moda</td>
+                        </tr>
+                    </tbody>
                 </table>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <table style="margin-left: auto; margin-right: auto; width: 88%; border-collapse: collapse; border: 1px solid #D4DCE3;">
-                    <tr style="background-color: #DDE5EC;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><b>País</b></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><b>Integrante</b></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><b>Responsabilidade</b></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><b>Tema / Participação</b></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🌎</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Welder</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Index / Estrutura Geral</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Página inicial, organização do projeto e navegação entre as páginas.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇲🇽</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Kelvin</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>México</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Música e Mitologia.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇬🇷</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>André</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Grécia</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Gastronomia.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇪🇬</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Gustavo</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Egito</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Monumentos Históricos.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇮🇹</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Alicia</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Itália</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">História.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇨🇦</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Matheus</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Canadá</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Natureza.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇩🇪</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Gabriel</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Alemanha</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Guerras e Impactos Políticos.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇨🇭</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Maria Eduarda Almeida da Rocha</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Suíça</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Turismo e Oportunidades Profissionais.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇦🇺</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Daniel</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Austrália</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Biodiversidade.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇯🇵</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Lucas</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>Japão</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Evolução das Artes Visuais.</span></td>
-                    </tr>
-                    <tr style="background-color: #FFFFFF;">
-                        <td style="text-align: center; padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 32px;">🇫🇷</span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="color: #18324A; font-size: 18px;"><b>Maria Eduarda Cabral</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;"><b>França</b></span></td>
-                        <td style="padding: 15px; border: 1px solid #D4DCE3;"><span style="font-size: 16px;">Museus, Artistas e Moda.</span></td>
-                    </tr>
+        
+        <!-- Colaboradores anteriores -->
+        <section>
+            <h2>Colaboradores anteriores</h2>
+
+            <p>
+                Durante o desenvolvimento do Atlas, alguns integrantes
+                contribuíram para as etapas iniciais do projeto.
+                Embora não façam mais parte da equipe atual,
+                suas participações também são reconhecidas.
+            </p>
+
+            <div class="area-tabela">
+                <table class="tabela-creditos">
+                    <thead>
+                        <tr>
+                            <th>Integrante</th>
+                            <th>Contribuição</th>
+                            <th>Responsável atual</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>🇬🇷 André</td>
+                            <td>Grécia - Gastronomia</td>
+                            <td>Kelvin</td>
+                        </tr>
+
+                        <tr>
+                            <td>🇮🇹 Alicia</td>
+                            <td>Itália - História</td>
+                            <td>Matheus</td>
+                        </tr>
+                    </tbody>
                 </table>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <table style="background-color: #FFFFFF; margin-left: auto; margin-right: auto; width: 88%; border-collapse: collapse;">
-                    <tr>
-                        <td style="text-align: center; padding: 20px;"><span style="font-size: 16px;">O projeto foi desenvolvido em grupo, com cada integrante responsável pela construção e organização de sua respectiva página.</span></td>
-                    </tr>
-                </table>
-            </section>
-        </main>
+        <br><br>
 
-        <!-- Rodapé -->
-        <footer>
-            <table style="background-color: #18324A; width: 100%; border-collapse: collapse;">
-                <tr>
-                    <td style="text-align: center; padding: 18px;"><span style="color: #FFFFFF; font-size: 16px;"><b>ATLAS - Créditos</b></span></td>
-                </tr>
-            </table>
-        </footer>
-    </body>
+        <!-- Encerramento -->
+        <section class="resumo-sobre">
+            <div>
+                <h2>Um projeto, diferentes culturas.</h2>
+                <p>
+                    Cada página apresenta um país e um tema,
+                    mas todas fazem parte do mesmo Atlas.
+                </p>
+            </div>
+
+            <a href="index.html#paises">Explorar países ↗</a>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>ATLAS - Projeto Acadêmico</p>
+    </footer>
+
+</body>
 </html>
