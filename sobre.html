@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="site">
+<body class="site" id="topo">
 
     <!-- Cabeçalho -->
     <header class="cabecalho">
@@ -18,10 +18,31 @@
                 <span class="subtitulo">Explore o Mundo</span>
             </div>
 
+            <details class="busca-atlas">
+                <summary>Buscar no Atlas</summary>
+                <div class="busca-conteudo">
+                    <p>Escolha um país ou assunto:</p>
+                    <ul>
+                    <li><a href="transicoes/mexico.html"><strong>México</strong><small>Música, mitologia e Día de los Muertos</small></a></li>
+                    <li><a href="transicoes/grecia.html"><strong>Grécia</strong><small>Gastronomia e culinária</small></a></li>
+                    <li><a href="transicoes/egito.html"><strong>Egito</strong><small>Monumentos e engenharia</small></a></li>
+                    <li><a href="transicoes/italia.html"><strong>Itália</strong><small>História e Roma Antiga</small></a></li>
+                    <li><a href="transicoes/canada.html"><strong>Canadá</strong><small>Natureza, biomas e animais</small></a></li>
+                    <li><a href="transicoes/alemanha.html"><strong>Alemanha</strong><small>Guerras, reunificação e política</small></a></li>
+                    <li><a href="transicoes/suica.html"><strong>Suíça</strong><small>Turismo, Alpes e trabalho</small></a></li>
+                    <li><a href="transicoes/australia.html"><strong>Austrália</strong><small>Fauna, biodiversidade e cultura</small></a></li>
+                    <li><a href="transicoes/japao.html"><strong>Japão</strong><small>Artes visuais e artistas</small></a></li>
+                    <li><a href="transicoes/franca.html"><strong>França</strong><small>Arte, museus e moda</small></a></li>
+                    </ul>
+                    <p class="busca-ajuda">Para localizar uma palavra no texto, use Ctrl+F no computador.</p>
+                </div>
+            </details>
+
             <nav class="menu">
                 <a href="index.html">Início</a>
                 <a href="index.html#mapa">Mapa</a>
                 <a href="index.html#paises">Países</a>
+                <a href="orcamento.html">Orçamento e Contato</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="creditos.html">Créditos</a>
             </nav>
@@ -84,17 +105,25 @@
         <section class="cartao-pagina">
             <h2>Países presentes no projeto</h2>
 
+            <img style="display: block; width: 100%; margin: 20px 0; border-radius: 10px;" src="img/atlas-paises-uma-viagem-pelo-mundo.png" alt="Banner do Atlas com paisagens e monumentos que representam os dez países do projeto" loading="lazy">
+
             <p>
-                🇲🇽 México | 🇬🇷 Grécia | 🇪🇬 Egito |
-                🇮🇹 Itália | 🇨🇦 Canadá | 🇩🇪 Alemanha |
-                🇨🇭 Suíça | 🇦🇺 Austrália |
-                🇯🇵 Japão | 🇫🇷 França
+                México | Grécia | Egito |
+                Itália | Canadá | Alemanha |
+                Suíça | Austrália | Japão | França
+            </p>
+
+            <p>
+                Em um momento do desenvolvimento, o grupo chegou a considerar uma possível troca de nome,
+                mas decidiu manter <strong>Atlas</strong>, porque o título já representava bem a proposta do projeto
+                e já estava integrado à identidade visual e à navegação do site.
             </p>
 
             <a class="botao" href="index.html#paises">
                 Explorar países
             </a>
         </section>
+
 
     </main>
 
@@ -103,5 +132,6 @@
         <p>ATLAS - Sobre o Projeto</p>
     </footer>
 
+    <a class="voltar-topo" href="#topo" aria-label="Voltar ao início da página" title="Voltar ao início">↑</a>
 </body>
 </html>

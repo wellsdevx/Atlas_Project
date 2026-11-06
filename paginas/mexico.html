@@ -1,162 +1,499 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>México - Atlas</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    </head>
-    <body style="font-family: Arial, sans-serif; margin: 0; color: #202A35; background-color: #FFF8EE;">
-        <!-- Cabeçalho e navegação principal -->
-        <header>
-            <nav>
-                <table style="background-color: #006847; width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td style="padding: 12px; width: 38%;">
-                            <a href="../index.html" style="color: white; text-decoration: none;"><span style="font-size: 32px;"><b>ATLAS</b></span></a>
-                            <span style="color: white; font-size: 13px;">| México</span>
-                        </td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html" style="color: white; text-decoration: none;"><b>Início</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html#mapa" style="color: white; text-decoration: none;"><b>Mapa</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html#paises" style="color: white; text-decoration: none;"><b>Países</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../sobre.html" style="color: white; text-decoration: none;"><b>Sobre</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../creditos.html" style="color: white; text-decoration: none;"><b>Créditos</b></a></td>
-                    </tr>
-                </table>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>México - Atlas</title>
+    <link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body class="site pais" id="topo" style="--cor-pais: #59c08c; --luz-pais: rgba(37, 135, 86, 0.21);">
+    <header class="cabecalho">
+        <div class="topo">
+            <div class="marca">
+                <a href="../index.html">ATLAS</a>
+                <span class="subtitulo">México</span>
+            </div>
+            <details class="busca-atlas">
+                <summary>Buscar no Atlas</summary>
+                <div class="busca-conteudo">
+                    <p>Escolha um país ou assunto:</p>
+                    <ul style="padding-left: 20px;">
+                    <li><a href="../transicoes/mexico.html"><strong>México</strong><small>Música, mitologia e Día de los Muertos</small></a></li>
+                    <li><a href="../transicoes/grecia.html"><strong>Grécia</strong><small>Gastronomia e culinária</small></a></li>
+                    <li><a href="../transicoes/egito.html"><strong>Egito</strong><small>Monumentos e engenharia</small></a></li>
+                    <li><a href="../transicoes/italia.html"><strong>Itália</strong><small>História e Roma Antiga</small></a></li>
+                    <li><a href="../transicoes/canada.html"><strong>Canadá</strong><small>Natureza, biomas e animais</small></a></li>
+                    <li><a href="../transicoes/alemanha.html"><strong>Alemanha</strong><small>Guerras, reunificação e política</small></a></li>
+                    <li><a href="../transicoes/suica.html"><strong>Suíça</strong><small>Turismo, Alpes e trabalho</small></a></li>
+                    <li><a href="../transicoes/australia.html"><strong>Austrália</strong><small>Fauna, biodiversidade e cultura</small></a></li>
+                    <li><a href="../transicoes/japao.html"><strong>Japão</strong><small>Artes visuais e artistas</small></a></li>
+                    <li><a href="../transicoes/franca.html"><strong>França</strong><small>Arte, museus e moda</small></a></li>
+                    </ul>
+                    <p class="busca-ajuda">Para localizar uma palavra no texto, use Ctrl+F no computador.</p>
+                </div>
+            </details>
+
+            <nav aria-label="Navegação principal" class="menu">
+                <a href="../index.html">Início</a>
+                <a href="../index.html#mapa">Mapa</a>
+                <a href="../index.html#paises">Países</a>
+                <a href="../orcamento.html">Orçamento e Contato</a>
+                <a href="../sobre.html">Sobre</a>
+                <a href="../creditos.html">Créditos</a>
             </nav>
-        </header>
-
-        <!-- Conteúdo principal -->
-        <main>
-            <article>
-                <table style="margin-left: auto; margin-right: auto; width: 90%; border-spacing: 20px;">
-                    <tr>
-                        <td style="border-radius: 8px; background-color: #FFFFFF; text-align: center; padding: 25px;">
-                            <a href="../index.html" style="color: #18324A;">Voltar para a Index</a>
-                            <br>
-                            <br>
-                            <br>
-                            <span style="color: #18324A; font-size: 40px;"><b>México</b></span>
-                            <br>
+        </div>
+    </header>
+    <main class="pagina-pais conteudo-tabelas conteudo-mexico">
+        <div class="identidade-pais">
+            <span>ATLAS / MÉXICO</span>
+            <a href="../index.html#paises">Todos os países</a>
+        </div>
+        <article>
+            <div class="bloco-tabela" style="overflow-x: auto;">
+                <div class="linha-tabela colunas-1 linha-destaque">
+                    <div class="coluna-tabela">
+                        <span>
+                            <b>México</b>
+                        </span>
+                        <div>
+                            <img alt="Bandeira do mexico" loading="lazy" src="../img/mexico/mexico.jpg"/>
+                            <h1>Ecos da Alma: Música e Mitologia</h1>
+                            vamos explorar a fascinante dualidade da vida e da morte através de duas grandes expressões: a voz inconfundível da cantora
+                            <strong>Mon Laferte</strong>
+                            e a vibrante tradição do
+                            <strong>Día de los Muertos</strong>
+                            .
+                            <section>
+                                <h2>Mon Laferte: O Bolero, a Dor e a Paixão</h2>
+                                <p>
+                                    Com raízes chilenas e o coração entregue ao México, Mon Laferte é uma das artistas mais completas da sua geração. Ela mistura ritmos tradicionais, como o bolero, a cumbia e o mariachi, com a atitude do rock alternativo. As suas letras profundas e a sua estética dramática bebem frequentemente do folclore e da cultura popular, fazendo da sua música um lamento apaixonado e uma celebração da vida.
+                                </p>
+                                <h2>Día de los Muertos: A Celebração da Memória</h2>
+                                <p>
+                                    O Día de los Muertos (Dia dos Mortos) é muito mais do que uma data no calendário. Com origens que remontam à mitologia dos povos indígenas da Mesoamérica (como os Astecas), esta tradição mexicana não encara a morte com o fim, mas sim como uma passagem natural. Em vez de luto, há festa: altares coloridos (as ofrendas ), flores de cempasúchil, caveiras de açúcar e muita música servem para guiar e receber os espíritos dos entes queridos que regressam para visitar os vivos.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="linha-tabela colunas-1 linha-destaque">
+                    <div class="coluna-tabela">
+                        <section>
+                            <h2>Mon Laferte: A Voz da Paixão e do Folclore</h2>
+                            <p>
+                                Mon Laferte transforma sentimentos intensos em arte pura. Ao misturar o drama dos boleros com a sonoridade das rancheras mexicanas e a atitude do rock, a sua obra conecta-se diretamente com as raízes culturais da América Latina.
+                            </p>
+                            <h2>Mais quem é Mon Laferte?</h2>
+                            <p>
+                                <p>
+                                    Mon Laferte, cujo nome verdadeiro é Norma Monserrat Bustamante Laferte, nasceu em 2 de maio de 1983 em Viña del Mar, no Chile. Desde muito jovem, ela demonstrou um forte interesse pela música, começando a estudar canto e violão na adolescência e se apresentando em palcos locais e bares da sua cidade natal. Sua grande oportunidade nacional veio em 2003, quando participou do programa de talentos chileno
+                                    <em>
+                                        Rojo Fama Contrafama
+                                    </em>
+                                    , o que lhe deu projeção e permitiu que lançasse seu primeiro álbum de estúdio sob o nome artístico Monserrat Bustamante.
+                                </p>
+                                <p>
+                                    Buscando novos horizontes profissionais e artísticos, ela se mudou para a Cidade do México em 2007. Essa transição marcou uma fase de profunda reinvenção pessoal e artística, período em que passou a adotar o nome artístico Mon Laferte e a transitar por um som mais independente e visceral. Após enfrentar sérios problemas de saúde e um período difícil de adaptação, ela autoproduziu e lançou seu álbum
+                                    <em>
+                                        Desechable
+                                    </em>
+                                    em 2011, seguido por
+                                    <em>
+                                        Tornasol
+                                    </em>
+                                    em 2013, consolidando gradualmente sua identidade musical baseada na fusão de rock alternativo, baladas intensas e raízes latino-americanas.
+                                </p>
+                                <p>
+                                    O reconhecimento internacional explodiu com o lançamento de seu álbum
+                                    <em>
+                                        Mon Laferte Vol. 1
+                                    </em>
+                                    em 2015, impulsionado pelo enorme sucesso da faixa "Tu Falta de Querer". A partir daí, sua carreira decolou rapidamente, rendendo-lhe turnês esgotadas por toda a América Latina, Estados Unidos e Europa, além de dezenas de indicações e vitórias no Grammy Latino. Ao longo dos anos seguintes, ela continuou a explorar sua versatilidade artística com álbuns aclamados como
+                                    <em>
+                                        La Trenza
+                                    </em>
+                                    ,
+                                    <em>
+                                        Norma
+                                    </em>
+                                    e
+                                    <em>
+                                        Seis
+                                    </em>
+                                    , além de expandir sua expressão criativa para as artes visuais, como a pintura e a escultura. Atualmente, Mon Laferte é amplamente considerada uma das vozes mais influentes, autênticas e apaixonadas da música contemporânea da América Latina, tendo inclusive adotado a cidadania mexicana em 2022.
+                                </p>
+                            </p>
+                            <h3>Álbuns e Singles</h3>
                             <div>
-                                <img alt="Bandeira do mexico" height="100" src="../img/mexico/mexico.jpg" style="max-width: 100%; height: auto;">
-                                <h1 style="color: #006847;">Ecos da Alma: Música e Mitologia</h1>
-                                vamos explorar a fascinante dualidade da vida e da morte através de duas grandes
-                                expressões: a voz inconfundível da cantora
-                                <strong>Mon Laferte</strong>
-                                e a vibrante tradição do
-                                <strong>Día de los Muertos</strong>
-                                .
-                                <section style="padding: 20px 5%;">
-                                    <h2 style="color: #006847;">Mon Laferte: O Bolero, a Dor e a Paixão</h2>
-                                    <p>
-                                        Com raízes chilenas e o coração entregue ao México, Mon Laferte é uma das
-                                        artistas mais completas da sua geração. Ela mistura ritmos tradicionais, como
-                                        o bolero, a cumbia e o mariachi, com a atitude do rock alternativo. As suas
-                                        letras profundas e a sua estética dramática bebem frequentemente do folclore e
-                                        da cultura popular, fazendo da sua música um lamento apaixonado e uma
-                                        celebração da vida.
-                                    </p>
-                                    <h2 style="color: #006847;">Día de los Muertos: A Celebração da Memória</h2>
-                                    <p>
-                                        O Día de los Muertos (Dia dos Mortos) é muito mais do que uma data no
-                                        calendário. Com origens que remontam à mitologia dos povos indígenas da
-                                        Mesoamérica (como os Astecas), esta tradição mexicana não encara a morte com o
-                                        fim, mas sim como uma passagem natural. Em vez de luto, há festa: altares
-                                        coloridos (as ofrendas ), flores de cempasúchil, caveiras de açúcar e muita
-                                        música servem para guiar e receber os espíritos dos entes queridos que
-                                        regressam para visitar os vivos.
-                                    </p>
-                                </section>
+                                <table class="tabela-dados">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Capa
+                                            </th>
+                                            <th>
+                                                Álbum
+                                            </th>
+                                            <th>
+                                                Data de Lançamento
+                                            </th>
+                                            <th>
+                                                Singles
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/4h7l93gyyccuBoJ1QS27P5" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa Desechable" loading="lazy" src="../img/mexico/capas-desechable.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                Desechable
+                                            </td>
+                                            <td>
+                                                30 de junho de 2011
+                                            </td>
+                                            <td>
+                                                Soy
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/7tFRCDcq1MhhKXZJ2VZP6H" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa Tornasol" loading="lazy" src="../img/mexico/capas-tornasol.jpg"/>
+                                                </a>
+                                                <td>
+                                                    Tornasol
+                                                </td>
+                                                <td>
+                                                    7 de janeiro de 2013
+                                                </td>
+                                                <td>
+                                                    Ángel Negro
+                                                </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/5sG9v1V0gjNbQQiXkYKWe0" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa Mon Laferte, Vol. 1" loading="lazy" src="../img/mexico/capas-mon-la-ferte-vol-1.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                Mon Laferte, Vol. 1
+                                            </td>
+                                            <td>
+                                                31 de janeiro de 2015
+                                            </td>
+                                            <td>
+                                                Tu Falta De Querer
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/7CgbWo8K9pQx823YTI17zE" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa La Trenza" loading="lazy" src="../img/mexico/capas-la-trenza.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                La Trenza
+                                            </td>
+                                            <td>
+                                                28 de abril de 2017
+                                            </td>
+                                            <td>
+                                                Amárrame
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/5vwSqLLGqeCTyRVObYjkDq" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa Norma" loading="lazy" src="../img/mexico/capas-norma.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                Norma
+                                            </td>
+                                            <td>
+                                                9 de novembro de 2018
+                                            </td>
+                                            <td>
+                                                El Beso
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/3EOGXDmeHGGlAFAIlagcDF" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa Seis" loading="lazy" src="../img/mexico/capas-seis.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                Seis
+                                            </td>
+                                            <td>
+                                                8 de abril de 2021
+                                            </td>
+                                            <td>
+                                                La Mujer
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/7hWWrisl7wIunR9dKiyjEL" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa 1940 Carmen" loading="lazy" src="../img/mexico/capas-1940-carmen.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                1940 Carmen
+                                            </td>
+                                            <td>
+                                                29 de outubro de 2021
+                                            </td>
+                                            <td>
+                                                Supermercado
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/1P3veSTOBbA57c6nndi5xI" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa Autopoiética" loading="lazy" src="../img/mexico/capas-autopoetica.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                Autopoiética
+                                            </td>
+                                            <td>
+                                                10 de novembro de 2023
+                                            </td>
+                                            <td>
+                                                NO+SAD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/7q2GxttTFDWOihvnSWdwWw" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa Femme Fatale" loading="lazy" src="../img/mexico/capas-femme-fatale.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                Femme Fatale
+                                            </td>
+                                            <td>
+                                                8 de novembro de 2025
+                                            </td>
+                                            <td>
+                                                Femme Fatale
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://open.spotify.com/intl-pt/album/29L7pXN58eLAlfhaAquyXh" rel="noopener noreferrer" target="_blank">
+                                                    <img alt="Capa Femme Fatale Vol. 2" loading="lazy" src="../img/mexico/capas-femme-fatale-vol-2.jpg"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                Femme Fatale Vol. 2
+                                            </td>
+                                            <td>
+                                                12 de junho de 2026
+                                            </td>
+                                            <td>
+                                                A Pesar De ti y De Mi
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <br>
-                            <br>
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border-radius: 8px; background-color: #FFFFFF; padding: 25px; height: 350px;">
-                            <section style="padding: 20px 5%;">
-                                <h2 style="color: #006847;">Mon Laferte: A Voz da Paixão e do Folclore</h2>
+                            <p>
+                                Quando a dor da perda e a melancolia na voz de Mon Laferte abraçam a alma de sua pátria adotiva, o México, somos transportados para a mais sagrada das celebrações: o Día de los Muertos . É o luto transformado em altar, onde a morte não apaga o amor, apenas o veste de cores e o eterniza em canções.
+                            </p>
+                            <section>
+                                <h1>Día de los Muertos</h1>
+                            </section>
+                            <div>
+                                <h2>Como é Comemorado o Día de los Muertos</h2>
                                 <p>
-                                    Mon Laferte transforma sentimentos intensos em arte pura. Ao misturar o drama dos
-                                    boleros com a sonoridade das rancheras mexicanas e a atitude do rock, a sua obra
-                                    conecta-se diretamente com as raízes culturais da América Latina.
+                                    O
+                                    <strong>Día de los Muertos</strong>
+                                    (Dia dos Mortos), comemorado principalmente nos dias
+                                    <strong>1º e 2 de novembro</strong>
+                                    no México, é uma das celebrações mais tradicionais e ricas culturalmente da América Latina. Diferente do Halloween, é uma festividade de origem pré-hispânica misturada com elementos católicos, cujo objetivo principal é
+                                    <strong>honrar e celebrar a memória dos entes queridos que já partiram</strong>
+                                    , acreditando que suas almas visitam o mundo dos vivos nesses dias.
                                 </p>
-                                <h3 style="color: #006847;">Música Recomendada</h3>
-                                <ul>
-                                    <li>
-                                        <strong>Tu Falta De Querer</strong>
-                                        <span>— Uma balada dramática inesquecível sobre a dor do amor e a intensidade do bolero.</span>
-                                        <br>
-                                        <a href="https://open.spotify.com/intl-pt/track/4skuEIloXWuxxgekKupkEH?si=9f8dde796b39486a" style="color: #006847;">
-                                            <img alt="FOTO ALBUM MON LAFERTE VOLUME1" height="100" src="../img/mexico/mon-laferte.jpg" style="max-width: 100%; height: auto;">
-                                        </a>
-                                    </li>
-                                </ul>
-                                <section style="margin-top: 40px; padding: 20px 5%;">
-                                    <h2 style="color: #006847;">A Saudade e o Sagrado</h2>
+                                <table class="tabela-dados">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Tópico / Subtópico
+                                            </th>
+                                            <th>
+                                                O que é / Explicação
+                                            </th>
+                                            <th>
+                                                Imagem
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <strong>1. Altar e Oferendas: Fotografias</strong>
+                                            </td>
+                                            <td>
+                                                Colocadas no topo do altar para homenagear e identificar o parente falecido que está sendo recebido.
+                                            </td>
+                                            <td>
+                                                <img alt="Foto de altar" loading="lazy" src="../img/mexico/dia-dos-dead-altar.jpg"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>1. Altar e Oferendas: Comidas e Bebidas</strong>
+                                            </td>
+                                            <td>
+                                                Pratos favoritos que o ente querido gostava em vida para que ele possa saborear a essência dos alimentos.
+                                            </td>
+                                            <td>
+                                                <img alt="Foto da comida favorita" loading="lazy" src="../img/mexico/dia-dos-dead-comes-e-bebes.jpg"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>1. Altar e Oferendas: Água e Sal</strong>
+                                            </td>
+                                            <td>
+                                                A água serve para saciar a sede da alma após a longa viagem, e o sal simboliza a pureza e protege o espírito.
+                                            </td>
+                                            <td>
+                                                <img alt="Foto de altar com agua e sal" loading="lazy" src="../img/mexico/dia-dos-dead-agua-e-sal.jpg"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>2. Flor de Cempasúchil e Papel Picado</strong>
+                                            </td>
+                                            <td>
+                                                A flor de cempasúchil (cravo-de-defunto), com seu aroma forte e cor laranja vibrante, cria trilhas para guiar as almas até os altares. O papel picado, feito com bandeirinhas coloridas recortadas, representa o elemento vento e a alegria contagiante da festividade.
+                                            </td>
+                                            <td>
+                                                <img alt="Foto de papel picado com flores" loading="lazy" src="../img/mexico/dia-dos-dead-flor.jpg"/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h1>Animações Inspiradas no Dia de los Muertos</h1>
+                                <p>
+                                    O
+                                    <strong>Dia de los Muertos</strong>
+                                    (Dia dos Mortos), tradicional celebração mexicana que honra e lembra os entes queridos que já se foram, tem inspirado obras de animação belíssimas e emocionantes.
+                                </p>
+                                <hr/>
+                                <div>
+                                    <h3>
+                                        1. Viva: A Vida é uma Festa (
+                                        <em>
+                                            Coco
+                                        </em>
+                                        , 2017)
+                                    </h3>
                                     <p>
-                                        Quando a dor da perda e a melancolia na voz de Mon Laferte abraçam a alma de
-                                        sua pátria adotiva, o México, somos transportados para a mais sagrada das
-                                        celebrações: o Día de los Muertos . É o luto transformado em altar, onde a
-                                        morte não apaga o amor, apenas o veste de cores e o eterniza em canções.
+                                        <strong>Estúdio:</strong>
+                                        Pixar / Disney
                                     </p>
-                                </section>
-                            </section>
-                            <section style="margin-top: 40px; padding: 20px 5%;">
-                                <h2 style="color: #006847;">O Regresso a Casa: A Magia da Ofrenda</h2>
-                                <p>
-                                    Dia de los Muertos não há lágrimas de amargura, mas sim a alegria de um
-                                    reencontro. As famílias constroem altares em suas casas, as Ofrenda (oferenda ou
-                                    altar), que funcionam como portais iluminados entre dois mundos. Cada elemento
-                                    colocado neste altar tem um propósito mágico e um significado profundo:
-                                </p>
-                                <img alt="ilustração de ofrenda" src="../img/mexico/ofrendas.avif" style="max-width: 100%; height: auto;" width="200">
+                                    <p>
+                                        <strong>Sobre a obra:</strong>
+                                        É, sem dúvida, a obra mais famosa a retratar o tema. O filme acompanha Miguel, um menino mexicano que sonha em ser músico, mas cuja família proíbe qualquer música devido a uma antiga história de abandono. Ao tocar o violão de seu falecido ídolo no Dia dos Mortos, ele é acidentalmente transportado para a Terra dos Mortos.
+                                    </p>
+                                    <p>
+                                        <strong>Por que assistir:</strong>
+                                        O filme é uma carta de amor à cultura mexicana, retratando com precisão e respeito elementos fundamentais da festividade, como os
+                                        <em>
+                                            altares de oferendas
+                                        </em>
+                                        (ofrendas), as pétalas de
+                                        <em>
+                                            cempasúchil
+                                        </em>
+                                        (flor-de-maravilha) que guiam os espíritos, o
+                                        <em>
+                                            papel picado
+                                        </em>
+                                        e a crença de que os mortos só morrem de verdade quando são esquecidos.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>
+                                        2. Festa no Céu (
+                                        <em>
+                                            The Book of Life
+                                        </em>
+                                        , 2014)
+                                    </h3>
+                                    <p>
+                                        <strong>Estúdio:</strong>
+                                        20th Century Fox / Reel FX (Produzido por Guillermo del Toro)
+                                    </p>
+                                    <p>
+                                        <strong>Sobre a obra:</strong>
+                                        Com um visual único que lembra bonecos de madeira artesanais, o filme segue Manolo, um jovem dividido entre cumprir as expectativas de sua família e seguir seu coração (a música). Ele embarca em uma jornada fantástica por mundos espirituais — a Terra dos Lembrados e a Terra dos Esquecidos — para resgatar o seu amor. *(Nota: No Brasil, foi lançado nos cinemas com o título "Festa no Céu").*
+                                    </p>
+                                    <p>
+                                        <strong>Por que assistir:</strong>
+                                        Co-produzido pelo aclamado cineasta mexicano Guillermo del Toro, o filme mergulha profundamente na mitologia do folclore mexicano e na visão festiva e colorida que o México tem sobre a morte, misturando romance, aventura e muita música.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>3. Día de los Muertos (Curta-metragem, 2013)</h3>
+                                    <p>
+                                        <strong>Estúdio:</strong>
+                                        USote / Ringling College of Art and Design
+                                    </p>
+                                    <p>
+                                        <strong>Sobre a obra:</strong>
+                                        Um curta-metragem independente aclamado que conta a história de uma garotinha triste que visita o altar de sua mãe falecida. Ao tocar uma caveira decorada (calaverita), ela é transportada para um mundo mágico repleto de esqueletos animados que celebram a vida e a morte com dança e alegria.
+                                    </p>
+                                    <p>
+                                        <strong>Por que assistir:</strong>
+                                        É uma obra curta (com cerca de 3 minutos), sensível e visualmente deslumbrante, perfeita para entender a essência reconfortante da data de forma poética.
+                                    </p>
+                                </div>
+                                <hr/>
+                                <h2>Elementos culturais comuns retratados nestas animações:</h2>
                                 <ul>
                                     <li>
-                                        Flores de Cempasúchil Com as suas pétalas cor de fogo e um aroma intenso,
-                                        criam um caminho vibrante no chão para guiar os espíritos na escuridão até ao
-                                        altar.
+                                        <strong>As Ofrendas:</strong>
+                                        Altares montados nas casas com fotos, comidas favoritas e velas para receber os espíritos.
                                     </li>
                                     <li>
-                                        O Copal e o Incenso O fumo sagrado que sobe aos céus purifica o ar, afastando
-                                        as energias negativas e permitindo que as almas entrem em paz.
+                                        <strong>As Catrinas e Calaveras:</strong>
+                                        Esqueletos elegantemente vestidos e coloridos, que tiram o peso sombrio da morte e celebram a memória de quem partiu.
                                     </li>
                                     <li>
-                                        As Velas Iluminadas A luz da esperança. Cada vela acesa representa uma alma
-                                        lembrada, servindo de farol para que não se percam no caminho de volta.
-                                    </li>
-                                    <li>
-                                        O Pão, a Água e o Sal A água sacia a sede da longa viagem; o sal purifica a
-                                        alma; e o doce Pan de Muerto alimenta os espíritos, sendo uma oferenda de amor
-                                        fraternal.
-                                    </li>
-                                    <li>
-                                        Fotografias e Memórias O elemento mais importante. Diz a tradição que uma
-                                        pessoa só morre verdadeiramente quando é esquecida. A fotografia no altar é o
-                                        convite oficial para o banquete.
+                                        <strong>O Xoloitzcuintle:</strong>
+                                        O cão pelado mexicano, frequentemente retratado como o guia espiritual que acompanha os mortos em sua jornada (como o Dante em
+                                        <em>
+                                            Viva
+                                        </em>
+                                        ).
                                     </li>
                                 </ul>
-                                <p>
-                                    Envolta em papel picado que dança com o vento e ao som de velhas canções — como as
-                                    que ecoam na voz de Mon Laferte —, a morte senta-se à mesa, bebe, canta e
-                                    recorda-nos que o amor é a única força capaz de atravessar a eternidade.
-                                </p>
-                            </section>
-                        </td>
-                    </tr>
-                </table>
-            </article>
-        </main>
-
-        <!-- Rodapé -->
-        <footer>
-            <table style="background-color: #006847; width: 100%; border-collapse: collapse;">
-                <tr>
-                    <td style="text-align: center; padding: 18px;"><span style="color: #FFFFFF; font-size: 16px;"><b>ATLAS - México</b></span></td>
-                </tr>
-            </table>
-        </footer>
-    </body>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <nav aria-label="Navegação do país" class="navegacao-pais">
+            <a href="../index.html#paises">Voltar aos países</a>
+            <a href="../sobre.html">Sobre o Atlas</a>
+        </nav>
+    </main>
+    <footer class="rodape">
+        <p>ATLAS - Projeto Acadêmico | México</p>
+    </footer>
+    <a aria-label="Voltar ao início da página" class="voltar-topo" href="#topo" title="Voltar ao início">↑</a>
+</body>
 </html>

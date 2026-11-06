@@ -1,156 +1,393 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
     <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Alemanha</title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>
+            Alemanha - Atlas
+        </title>
+        <link href="../css/style.css" rel="stylesheet"/>
     </head>
-    <body style="font-family: Arial, sans-serif; margin: 0; color: #202A35; background-color: #FFF9E8;">
-        <!-- Cabeçalho e navegação principal -->
-        <header>
-            <nav>
-                <table style="background-color: #1F1F1F; width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td style="padding: 12px; width: 38%;">
-                            <a href="../index.html" style="color: white; text-decoration: none;"><span style="font-size: 32px;"><b>ATLAS</b></span></a>
-                            <span style="color: white; font-size: 13px;">| Alemanha</span>
-                        </td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html" style="color: white; text-decoration: none;"><b>Início</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html#mapa" style="color: white; text-decoration: none;"><b>Mapa</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html#paises" style="color: white; text-decoration: none;"><b>Países</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../sobre.html" style="color: white; text-decoration: none;"><b>Sobre</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../creditos.html" style="color: white; text-decoration: none;"><b>Créditos</b></a></td>
-                    </tr>
-                </table>
-            </nav>
+    <body class="site pais" id="topo" style="--cor-pais: #f0c36a; --luz-pais: rgba(191, 134, 47, 0.17);">
+        <header class="cabecalho">
+            <div class="topo">
+                <div class="marca">
+                    <a href="../index.html">
+                        ATLAS
+                    </a>
+                    <span class="subtitulo">
+                        Alemanha
+                    </span>
+                </div>
+                <details class="busca-atlas">
+                    <summary>
+                        Buscar no Atlas
+                    </summary>
+                    <div class="busca-conteudo">
+                        <p>
+                            Escolha um país ou assunto:
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="../transicoes/mexico.html">
+                                    <strong>
+                                        México
+                                    </strong>
+                                    <small>
+                                        Música, mitologia e Día de los Muertos
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/grecia.html">
+                                    <strong>
+                                        Grécia
+                                    </strong>
+                                    <small>
+                                        Gastronomia e culinária
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/egito.html">
+                                    <strong>
+                                        Egito
+                                    </strong>
+                                    <small>
+                                        Monumentos e engenharia
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/italia.html">
+                                    <strong>
+                                        Itália
+                                    </strong>
+                                    <small>
+                                        História e Roma Antiga
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/canada.html">
+                                    <strong>
+                                        Canadá
+                                    </strong>
+                                    <small>
+                                        Natureza, biomas e animais
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/alemanha.html">
+                                    <strong>
+                                        Alemanha
+                                    </strong>
+                                    <small>
+                                        Guerras, reunificação e política
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/suica.html">
+                                    <strong>
+                                        Suíça
+                                    </strong>
+                                    <small>
+                                        Turismo, Alpes e trabalho
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/australia.html">
+                                    <strong>
+                                        Austrália
+                                    </strong>
+                                    <small>
+                                        Fauna, biodiversidade e cultura
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/japao.html">
+                                    <strong>
+                                        Japão
+                                    </strong>
+                                    <small>
+                                        Artes visuais e artistas
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/franca.html">
+                                    <strong>
+                                        França
+                                    </strong>
+                                    <small>
+                                        Arte, museus e moda
+                                    </small>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="busca-ajuda">
+                            Para localizar uma palavra no texto, use Ctrl+F no computador.
+                        </p>
+                    </div>
+                </details>
+                <nav aria-label="Navegação principal" class="menu">
+                    <a href="../index.html">
+                        Início
+                    </a>
+                    <a href="../index.html#mapa">
+                        Mapa
+                    </a>
+                    <a href="../index.html#paises">
+                        Países
+                    </a>
+                    <a href="../orcamento.html">
+                        Orçamento e Contato
+                    </a>
+                    <a href="../sobre.html">
+                        Sobre
+                    </a>
+                    <a href="../creditos.html">
+                        Créditos
+                    </a>
+                </nav>
+            </div>
         </header>
-
-        <!-- Conteúdo principal -->
-        <main>
+        <main class="pagina-pais conteudo-tabelas">
+            <div class="identidade-pais">
+                <span>
+                    ATLAS / ALEMANHA
+                </span>
+                <a href="../index.html#paises">
+                    Todos os países
+                </a>
+            </div>
             <article>
                 <section>
-                    <table ;="" style="width: 80%; margin-left: auto; margin-right: auto;">
-                        <tr>
-                            <td style="width: 50%;">
-                                <h1 ;="" font-size="7" style="color: #1F1F1F;">
-                                    <img alt="Bandeira da alemanha" src="../img/alemanha/Bandeira_da_Alemanha.svg" style="width: 80px;">
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela">
+                            <div class="coluna-tabela">
+                                <h1>
+                                    <img alt="Bandeira da Alemanha" loading="lazy" src="../img/alemanha/Bandeira_da_Alemanha.svg"/>
                                     Alemanha
                                 </h1>
-                                <h2 style="color: #1F1F1F;">Guerras e Impactos Politicos</h2>
-                                <p>A Alemanha Teve um papel central em alguns dos maiores conflitos do século XX, que Transformaram seu território, sua política e sua sociedade</p>
-                            </td>
-                            <td style="width: 50%;"><img ;="" alt="Alemanha" src="../img/alemanha/Alemanha.jpg" style="width: 75%;"></td>
-                        </tr>
-                    </table>
-                    <table style="width: 80%; margin-left: auto; margin-right: auto;">
-                        <tr>
-                            <th style="text-align: left;">
-                                <h2 style="color: #1F1F1F;">Principais conflitos</h2>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td style="width: 33%;">
-                                <img alt="Primeira guerra" src="../img/alemanha/Primeira_guerra.webp" style="float: left; width: 30%;">
-                                <h3 style="color: #1F1F1F;">Primeira Guerra Mundial</h3>
-                                A Alemanha foi uma das Principais potências do conflito (1914-1918)
-                            </td>
-                            <td style="width: 33%;">
-                                <img alt="Segunda guerra" src="../img/alemanha/Segunda_guerra.jpg" style="float: left; width: 30%;">
-                                <h3 style="color: #1F1F1F;">Segunda Guerra Mundial</h3>
-                                <p>A Alemanha sobre o regime nazista, iniciou um conflito de grandes proporções (1939-1945)</p>
-                            </td>
-                            <td style="width: 33%;">
-                                <img alt="Guerra fria" src="../img/alemanha/Guerra_fria.jpg" style="float: left; width: 30%;">
-                                <h3 style="color: #1F1F1F;">Guerra Fria / Divisão da Alemanha</h3>
-                                <p>Após 1945, o país foi Divido entre Alemanha Ocidental e Alemanha Oriental.</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <table style="width: 80%; margin-left: auto; margin-right: auto;">
-                        <tr>
-                            <th style="text-align: left;">
-                                <h2 style="color: #1F1F1F;">Impactos Politicos</h2>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td style="width: 50%;">
-                                <img alt="Sociedade" src="../img/alemanha/Sociedade.webp" style="float: left; width: 30%;">
-                                <h3 style="color: #1F1F1F;">Mudanças do Governo e na sociedade</h3>
-                                As guerras levaram à queda de regime, grandes reformas políticas e mudanças na
-                                organizção do país e na vida da População
-                            </td>
-                            <td style="width: 50%;">
-                                <img alt="Consequencias" src="../img/alemanha/Consequencias.webp" style="float: left; width: 30%;">
-                                <h3 style="color: #1F1F1F;">Consequências internacionais</h3>
-                                <p>A Alemanha perdeu territórios, foi ocupada por potências estrangeiras e passou a ter um papel diferentedo cenário Mundial</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <table style="width: 80%; margin-left: auto; margin-right: auto;">
-                        <tr>
-                            <th style="text-align: left;">
-                                <h2 style="color: #1F1F1F;">Linha do tempo</h2>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td style="width: 25%;">
-                                <img alt="1" src="../img/alemanha/1.png" style="width: 30%;">
-                                <h3 style="color: #1F1F1F;">Antes das Guerras</h3>
-                                Formação do império Alemão e crescimento como potência europeia.
-                            </td>
-                            <td style="width: 25%;">
-                                <img alt="3840738" src="../img/alemanha/3840738.png" style="width: 30%;">
-                                <h3 style="color: #1F1F1F;">Guerras Mundiais</h3>
-                                <p>Participação nos dois conflitos e grandes destruições.</p>
-                            </td>
-                            <td style="width: 25%;">
-                                <img alt="3" src="../img/alemanha/3.png" style="width: 30%;">
-                                <h3 style="color: #1F1F1F;">Divisão da Alemanha</h3>
-                                <p>País dividido em Ocidente e Oriente durante a Guerra Fria.</p>
-                            </td>
-                            <td style="width: 25%;">
-                                <img alt="4" src="../img/alemanha/4.png" style="width: 30%;">
-                                <h3 style="color: #1F1F1F;">Reunificação</h3>
-                                <p>Em 1990, a Alemanha é reunificada, retomando sua unidade</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <table style="width: 80%; margin-left: auto; margin-right: auto;">
-                        <tr>
-                            <th style="text-align: left;">
-                                <h2 style="color: #1F1F1F;">Personagens / Marcos</h2>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td style="width: 25%;">
-                                <img alt="Otto von bismarck" src="../img/alemanha/Otto-von-Bismarck.webp" style="width: 30%;">
-                                <h3 style="color: #1F1F1F;">Otto Von Bismarck</h3>
-                                <p>Liderou a Unificação da Alemanha no Século XIX.</p>
-                            </td>
-                            <td style="width: 25%;">
-                                <img alt="Adolf hitler" src="../img/alemanha/Adolf-Hitler.webp" style="width: 30%;">
-                                <h3 style="color: #1F1F1F;">Adolf Hitler</h3>
-                                <p>Líder do Regime nazista durante a Segunda Guerra Mundial.</p>
-                            </td>
-                            <td style="width: 25%;">
-                                <img alt="Berlim" src="../img/alemanha/Berlim.jpg" style="width: 30%;">
-                                <h3 style="color: #1F1F1F;">Queda do muro de Berlim</h3>
-                                <p>Símbolo do fim da Divisão da Alemanha em 1989.</p>
-                            </td>
-                        </tr>
-                    </table>
+                                <h2>
+                                    Guerras e Impactos Políticos
+                                </h2>
+                                <p>
+                                    A Alemanha teve um papel central em alguns dos maiores conflitos do século XX,
+                                que transformaram seu território, sua política e sua sociedade.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela" style="display: flex; align-items: center; justify-content: center;">
+                                <img alt="Alemanha" loading="lazy" src="../img/alemanha/Alemanha.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela colunas-1 linha-destaque">
+                            <div class="coluna-tabela linha-titulo">
+                                <h2>
+                                    Principais conflitos
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="linha-tabela colunas-3">
+                            <div class="coluna-tabela">
+                                <img alt="Primeira guerra" loading="lazy" src="../img/alemanha/Primeira_guerra.webp"/>
+                                <h3>
+                                    Primeira Guerra Mundial
+                                </h3>
+                                <p>
+                                    A Alemanha foi uma das principais potências do conflito (1914-1918).
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Segunda guerra" loading="lazy" src="../img/alemanha/Segunda_guerra.jpg"/>
+                                <h3>
+                                    Segunda Guerra Mundial
+                                </h3>
+                                <p>
+                                    A Alemanha, sob o regime nazista, iniciou um conflito de grandes proporções (1939-1945).
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Guerra fria" loading="lazy" src="../img/alemanha/Guerra_fria.jpg"/>
+                                <h3>
+                                    Guerra Fria / Divisão da Alemanha
+                                </h3>
+                                <p>
+                                    Após 1945, o país foi dividido entre Alemanha Ocidental e Alemanha Oriental.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela colunas-1 linha-destaque">
+                            <div class="coluna-tabela linha-titulo">
+                                <h2>
+                                    Impactos Políticos
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="linha-tabela">
+                            <div class="coluna-tabela">
+                                <img alt="Sociedade" loading="lazy" src="../img/alemanha/Sociedade.webp"/>
+                                <h3>
+                                    Mudanças do Governo e na Sociedade
+                                </h3>
+                                <p>
+                                    As guerras levaram à queda de regimes, grandes reformas políticas e mudanças na
+                                organização do país e na vida da população.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Consequências" loading="lazy" src="../img/alemanha/Consequencias.webp"/>
+                                <h3>
+                                    Consequências internacionais
+                                </h3>
+                                <p>
+                                    A Alemanha perdeu territórios, foi ocupada por potências estrangeiras e passou
+                                a ter um papel diferente no cenário mundial.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela colunas-1 linha-destaque">
+                            <div class="coluna-tabela linha-titulo">
+                                <h2>
+                                    Linha do tempo
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="linha-tabela colunas-4">
+                            <div class="coluna-tabela">
+                                <img alt="Antes das guerras" loading="lazy" src="../img/alemanha/1.png"/>
+                                <h3>
+                                    Antes das Guerras
+                                </h3>
+                                <p>
+                                    Formação do Império Alemão e crescimento como potência europeia.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Guerras mundiais" loading="lazy" src="../img/alemanha/3840738.png"/>
+                                <h3>
+                                    Guerras Mundiais
+                                </h3>
+                                <p>
+                                    Participação nos dois conflitos e grandes destruições.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Divisão da Alemanha" loading="lazy" src="../img/alemanha/3.png"/>
+                                <h3>
+                                    Divisão da Alemanha
+                                </h3>
+                                <p>
+                                    País dividido em Ocidente e Oriente durante a Guerra Fria.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Reunificação" loading="lazy" src="../img/alemanha/4.png"/>
+                                <h3>
+                                    Reunificação
+                                </h3>
+                                <p>
+                                    Em 1990, a Alemanha é reunificada, retomando sua unidade.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela colunas-1 linha-destaque">
+                            <div class="coluna-tabela linha-titulo">
+                                <h2>
+                                    A Transformação da Alemanha
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="linha-tabela colunas-3">
+                            <div class="coluna-tabela">
+                                <img alt="Queda do Muro de Berlim" loading="lazy" src="../img/alemanha/A_queda_do_muro.jpeg"/>
+                                <h3>
+                                    A Queda do Muro de Berlim
+                                </h3>
+                                <p>
+                                    A Queda do Muro de Berlim foi um dos acontecimentos mais importantes da história alemã 
+                                e marcou o enfraquecimento da Guerra Fria. Construído em 1961, o muro dividia a cidade 
+                                de Berlim em duas partes: Berlim Ocidental, ligada aos países capitalistas, e Berlim 
+                                Oriental, controlada pelo governo socialista da Alemanha Oriental. Durante quase três 
+                                décadas, a divisão separou famílias, amigos e comunidades, além de representar a disputa
+                                política e ideológica entre Estados Unidos e União Soviética. Em 9 de novembro de 1989,
+                                após manifestações populares e mudanças políticas no governo da Alemanha Oriental, as 
+                                fronteiras foram abertas e milhares de pessoas começaram a atravessar o muro. A população
+                                celebrou o acontecimento, que simbolizou a liberdade e o desejo de reunificação do país. 
+                                Posteriormente, em 3 de outubro de 1990, a Alemanha foi oficialmente reunificada, encerrando
+                                um longo período de divisão territorial e política.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Adolf " loading="lazy" src="../img/alemanha/Dias_Atuais.jpeg"/>
+                                <h3>
+                                    Alemanha nos dias Atuais
+                                </h3>
+                                <p>
+                                    Atualmente, a Alemanha é considerada uma das principais potências econômicas e políticas do 
+                                mundo, tendo grande influência na Europa e em organizações internacionais. Depois de enfrentar
+                                duas guerras mundiais, a divisão territorial e um longo processo de reconstrução, o país 
+                                conseguiu desenvolver uma economia industrial forte e se destacar em áreas como tecnologia, 
+                                engenharia, indústria automobilística e pesquisa científica. Sua capital, Berlim, é um importante
+                                centro cultural, histórico e político, reunindo construções antigas e modernas que representam 
+                                diferentes períodos de sua trajetória. Além disso, a Alemanha possui um sistema de educação 
+                                desenvolvido, infraestrutura de transporte avançada e participação importante nas decisões da 
+                                União Europeia. Mesmo com seu crescimento, o país ainda enfrenta desafios, como o envelhecimento 
+                                da população, questões relacionadas à imigração e a necessidade de adaptar sua indústria às novas 
+                                tecnologias e às mudanças ambientais.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Berlim" loading="lazy" src="../img/alemanha/Reconstrução.jpeg"/>
+                                <h3>
+                                    A reconstrução da Alemanha após a Segunda Guerra
+                                </h3>
+                                <p>
+                                    Após o fim da Segunda Guerra Mundial, em 1945, a Alemanha enfrentou uma situação extremamente difícil.
+                                Grande parte de suas cidades havia sido destruída pelos bombardeios, sua economia estava enfraquecida
+                                e milhões de pessoas precisavam reconstruir suas vidas. O território alemão foi dividido em quatro zonas
+                                de ocupação, administradas pelos Estados Unidos, Reino Unido, França e União Soviética. Em 1949, essa 
+                                divisão deu origem a dois países: a Alemanha Ocidental, com influência capitalista, e a Alemanha Oriental, 
+                                sob influência socialista. Na parte ocidental, programas de recuperação econômica e investimentos ajudaram 
+                                a reconstruir fábricas, moradias e infraestrutura, contribuindo para um rápido crescimento econômico 
+                                conhecido como Milagre Econômico Alemão. Já a Alemanha Oriental seguiu um modelo econômico diferente, 
+                                com forte controle estatal. Esse processo de reconstrução transformou profundamente o país e estabeleceu 
+                                as bases para a Alemanha moderna, embora a divisão entre as duas partes só tenha terminado oficialmente em 1990.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </article>
+            <nav aria-label="Navegação do país" class="navegacao-pais">
+                <a href="../index.html#paises">
+                    Voltar aos países
+                </a>
+                <a href="../sobre.html">
+                    Sobre o Atlas
+                </a>
+            </nav>
         </main>
-
-        <!-- Rodapé -->
-        <footer>
-            <table style="background-color: #1F1F1F; width: 100%; border-collapse: collapse;">
-                <tr>
-                    <td style="text-align: center; padding: 18px;"><span style="color: #FFFFFF; font-size: 16px;"><b>ATLAS - Alemanha</b></span></td>
-                </tr>
-            </table>
+        <footer class="rodape">
+            <p>
+                ATLAS - Projeto Acadêmico | Alemanha
+            </p>
         </footer>
+        <a aria-label="Voltar ao início da página" class="voltar-topo" href="#topo" title="Voltar ao início">
+            ↑
+        </a>
     </body>
 </html>

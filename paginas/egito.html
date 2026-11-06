@@ -1,173 +1,429 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
     <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Egito</title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>
+            Egito - Atlas
+        </title>
+        <link href="../css/style.css" rel="stylesheet"/>
     </head>
-    <body style="font-family: Arial, sans-serif; margin: 0; color: #202A35; background-color: #F6EEDB;">
-        <!-- Cabeçalho e navegação principal -->
-        <header>
-            <nav>
-                <table style="background-color: #8A641F; width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td style="padding: 12px; width: 38%;">
-                            <a href="../index.html" style="color: white; text-decoration: none;"><span style="font-size: 32px;"><b>ATLAS</b></span></a>
-                            <span style="color: white; font-size: 13px;">| Egito</span>
-                        </td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html" style="color: white; text-decoration: none;"><b>Início</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html#mapa" style="color: white; text-decoration: none;"><b>Mapa</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html#paises" style="color: white; text-decoration: none;"><b>Países</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../sobre.html" style="color: white; text-decoration: none;"><b>Sobre</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../creditos.html" style="color: white; text-decoration: none;"><b>Créditos</b></a></td>
-                    </tr>
-                </table>
-            </nav>
+    <body class="site pais" id="topo" style="--cor-pais: #dbb96c; --luz-pais: rgba(194, 137, 47, 0.20);">
+        <header class="cabecalho">
+            <div class="topo">
+                <div class="marca">
+                    <a href="../index.html">
+                        ATLAS
+                    </a>
+                    <span class="subtitulo">
+                        Egito
+                    </span>
+                </div>
+                <details class="busca-atlas">
+                    <summary>
+                        Buscar no Atlas
+                    </summary>
+                    <div class="busca-conteudo">
+                        <p>
+                            Escolha um país ou assunto:
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="../transicoes/mexico.html">
+                                    <strong>
+                                        México
+                                    </strong>
+                                    <small>
+                                        Música, mitologia e Día de los Muertos
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/grecia.html">
+                                    <strong>
+                                        Grécia
+                                    </strong>
+                                    <small>
+                                        Gastronomia e culinária
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/egito.html">
+                                    <strong>
+                                        Egito
+                                    </strong>
+                                    <small>
+                                        Monumentos e engenharia
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/italia.html">
+                                    <strong>
+                                        Itália
+                                    </strong>
+                                    <small>
+                                        História e Roma Antiga
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/canada.html">
+                                    <strong>
+                                        Canadá
+                                    </strong>
+                                    <small>
+                                        Natureza, biomas e animais
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/alemanha.html">
+                                    <strong>
+                                        Alemanha
+                                    </strong>
+                                    <small>
+                                        Guerras, reunificação e política
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/suica.html">
+                                    <strong>
+                                        Suíça
+                                    </strong>
+                                    <small>
+                                        Turismo, Alpes e trabalho
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/australia.html">
+                                    <strong>
+                                        Austrália
+                                    </strong>
+                                    <small>
+                                        Fauna, biodiversidade e cultura
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/japao.html">
+                                    <strong>
+                                        Japão
+                                    </strong>
+                                    <small>
+                                        Artes visuais e artistas
+                                    </small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../transicoes/franca.html">
+                                    <strong>
+                                        França
+                                    </strong>
+                                    <small>
+                                        Arte, museus e moda
+                                    </small>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="busca-ajuda">
+                            Para localizar uma palavra no texto, use Ctrl+F no computador.
+                        </p>
+                    </div>
+                </details>
+                <nav aria-label="Navegação principal" class="menu">
+                    <a href="../index.html">
+                        Início
+                    </a>
+                    <a href="../index.html#mapa">
+                        Mapa
+                    </a>
+                    <a href="../index.html#paises">
+                        Países
+                    </a>
+                    <a href="../orcamento.html">
+                        Orçamento e Contato
+                    </a>
+                    <a href="../sobre.html">
+                        Sobre
+                    </a>
+                    <a href="../creditos.html">
+                        Créditos
+                    </a>
+                </nav>
+            </div>
         </header>
-
-        <!-- Conteúdo principal -->
-        <main>
+        <main class="pagina-pais conteudo-tabelas">
+            <div class="identidade-pais">
+                <span>
+                    ATLAS / EGITO
+                </span>
+                <a href="../index.html#paises">
+                    Todos os países
+                </a>
+            </div>
             <article>
                 <section>
-                    <table style="margin-left: auto; margin-right: auto; width: 80%;">
-                        <tr>
-                            <td style="text-align: center; padding: 20px; width: 50%;"><img alt="Paisagem" src="../img/egito/Paisagem.jpg" style="width: 500px;"></td>
-                            <td style="padding: 20px; width: 50%;">
-                                <h1 style="color: #8A641F;"><img alt="Flag of egypt" src="../img/egito/Flag_of_Egypt.svg" style="width: 60px;">Egito</h1>
-                                <h2 style="color: #8A641F;">Monumentos Históricos</h2>
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela">
+                            <div class="coluna-tabela" style="display: flex; align-items: center; justify-content: center;">
+                                <img alt="Flag of egypt" loading="lazy" src="../img/egito/Flag_of_Egypt.svg" style="max-height: 200px;"/>
+                            </div>
+                            <div class="coluna-tabela">
+                                <h1>
+                                    <img alt="simbolo egípcio" loading="lazy" src="../img/egito/simbolo_egipcio.png"/>
+                                    Egito
+                                </h1>
+                                <h2>
+                                    Monumentos Históricos
+                                </h2>
                                 <p>
                                     O Egito é um país conhecido por sua história milenar e por seus impressionantes
                                     monumentos, construídos principalmente durante o período do Antigo Egito. Essas
                                     construções mostram a importância da religião, dos faraós e da cultura egípcia
                                     para aquela sociedade.
                                 </p>
-                            </td>
-                        </tr>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-
                 <section>
-                    <h2 style="color: #8A641F; text-align: center;">Monumentos do Egito</h2>
-                    <table style="margin-left: auto; margin-right: auto; width: 80%;">
-                        <tr>
-                            <td style="text-align: center; padding: 30px; width: 50%;">
-                                <img alt="Esfinge gize" src="../img/egito/esfinge-gize.jpg" style="width: 450px;">
-                                <h2 style="color: #8A641F;">Grande Esfinge de Gizé</h2>
+                    <h2>
+                        Monumentos do Egito
+                    </h2>
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela">
+                            <div class="coluna-tabela">
+                                <img alt="Esfinge gize" loading="lazy" src="../img/egito/esfinge-gize.jpg"/>
+                                <h2>
+                                    Grande Esfinge de Gizé
+                                </h2>
                                 <p>
                                     A Grande Esfinge de Gizé é uma enorme estátua localizada próxima às pirâmides de
                                     Gizé. Ela possui o corpo de um leão e uma cabeça humana, sendo considerada uma das
                                     construções mais conhecidas do Egito Antigo.
                                 </p>
-                            </td>
-                            <td style="padding: 30px; width: 50%;">
-                                <h2 style="color: #8A641F;">As Construções do Egito Antigo</h2>
+                            </div>
+                            <div class="coluna-tabela">
+                                <h2>
+                                    As Construções do Egito Antigo
+                                </h2>
                                 <p>
-                                    As construções do Egito Antigo estavam muito ligadas à religião, à vida dos faraós
-                                    e às crenças sobre a vida após a morte. Os egípcios desenvolveram técnicas de
-                                    construção capazes de criar grandes estruturas utilizando principalmente pedras.
+                                    As construções do Egito Antigo estavam muito ligadas à religião, à vida dos faraós 
+                                    e às crenças sobre a vida após a morte. Os egípcios acreditavam que os monumentos 
+                                    e túmulos deveriam ser construídos para durar por muito tempo, pois representavam 
+                                    a importância de seus governantes e de suas tradições. Além das pirâmides, foram 
+                                    construídos templos religiosos, túmulos, palácios e diferentes estruturas utilizadas 
+                                    pela sociedade, muitas delas decoradas com grandes colunas, esculturas, pinturas e 
+                                    inscrições nas paredes.
                                 </p>
                                 <p>
-                                    Além de monumentos, os egípcios construíram templos, túmulos, palácios e outras
-                                    estruturas que faziam parte da vida religiosa e social. Muitas dessas construções
-                                    possuíam grandes colunas, estátuas, pinturas e inscrições.
+                                    A construção desses monumentos exigia planejamento, organização e a participação de 
+                                   diferentes profissionais, como trabalhadores, artesãos e arquitetos. Essas obras 
+                                   utilizavam técnicas desenvolvidas ao longo das gerações e demonstravam os conhecimentos 
+                                   dos egípcios em áreas como matemática, engenharia e arquitetura. Até hoje, essas construções 
+                                   despertam a curiosidade de pesquisadores e visitantes do mundo inteiro.
                                 </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 30px; width: 50%;">
-                                <h2 style="color: #8A641F;">Templo Mortuário de Hatshepsut</h2>
-                                <img alt="Hatshepsut" src="../img/egito/Hatshepsut.jpg" style="width: 450px;">
+                            </div>
+                        </div>
+                        <div class="linha-tabela">
+                            <div class="coluna-tabela">
+                                <h2>
+                                    A Arquitetura Egípcia
+                                </h2>
+                                <p>
+                                    A arquitetura egípcia era marcada pelo tamanho, pela resistência e pela aparência 
+                                   grandiosa de suas construções. Os antigos egípcios utilizavam principalmente pedras 
+                                   para construir paredes, colunas, templos e monumentos que deveriam permanecer 
+                                   preservados durante muitos anos.
+                                </p>
+                                <p>
+                                    Uma característica bastante conhecida dessa arquitetura era a presença de grandes 
+                                    estruturas simétricas, corredores, escadarias e colunas decoradas. Muitos edifícios 
+                                    também apresentavam esculturas, pinturas e hieróglifos, que representavam deuses, 
+                                    faraós, acontecimentos históricos e aspectos da vida cotidiana.
+                                </p>
+                                <p>
+                                    Essas construções não tinham apenas uma função prática, mas também representavam o 
+                                   poder político e religioso dos governantes. Até hoje, a arquitetura egípcia é estudada
+                                   por sua grandiosidade e pela capacidade dos antigos construtores de realizar obras tão impressionantes.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <h2>
+                                    Templo Mortuário de Hatshepsut
+                                </h2>
+                                <img alt="Hatshepsut" loading="lazy" src="../img/egito/Hatshepsut.jpg"/>
                                 <p>
                                     O Templo Mortuário de Hatshepsut foi construído para a faraó Hatshepsut e fica
                                     próximo ao Vale dos Reis. O templo possui grandes terraços e colunas, aproveitando
                                     a formação das montanhas ao seu redor. Sua construção é conhecida pela sua
                                     aparência diferente de outros templos egípcios.
                                 </p>
-                            </td>
-                            <td style="padding: 30px; width: 50%;">
-                                <h2 style="color: #8A641F;">A Arquitetura Egípcia</h2>
-                                <p>
-                                    A arquitetura egípcia era marcada pelo tamanho e pela durabilidade de suas
-                                    construções. Grandes blocos de pedra eram utilizados para formar paredes, colunas
-                                    e outras partes das construções.
-                                </p>
-                                <p>
-                                    Os edifícios também eram decorados com esculturas, pinturas e hieróglifos. Esses
-                                    elementos ajudavam a representar deuses, faraós, acontecimentos e aspectos da
-                                    sociedade egípcia.
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center; padding: 30px; width: 50%;">
-                                <img alt="Piramides" src="../img/egito/Piramides.jpg" style="width: 450px;">
-                                <h2 style="color: #8A641F;">Pirâmides</h2>
+                            </div>
+                        </div>
+                        <div class="linha-tabela">
+                            <div class="coluna-tabela">
+                                <img alt="Piramides" loading="lazy" src="../img/egito/Piramides.jpg"/>
+                                <h2>
+                                    Pirâmides
+                                </h2>
                                 <p>
                                     As Pirâmides de Gizé são algumas das construções mais famosas do Egito. Elas foram
                                     construídas como grandes túmulos para faraós e fazem parte de um importante
                                     complexo localizado na região de Gizé. A Grande Pirâmide é a maior delas e foi
                                     construída para o faraó Quéops.
                                 </p>
-                            </td>
-                            <td style="padding: 30px; width: 50%;">
-                                <h2 style="color: #8A641F;">Como eram feitas as construções?</h2>
+                            </div>
+                            <div class="coluna-tabela">
+                                <h2>
+                                    Como eram feitas as construções?
+                                </h2>
                                 <p>
-                                    A construção de grandes obras exigia planejamento, organização e uma grande
-                                    quantidade de trabalhadores. Os materiais eram transportados e posicionados para
-                                    formar as enormes estruturas.
+                                    A construção de grandes monumentos no Egito Antigo exigia muito planejamento, 
+                                   organização e conhecimento. Os materiais utilizados precisavam ser retirados 
+                                   de pedreiras, transportados e posicionados cuidadosamente para formar as enormes 
+                                   estruturas. Esse trabalho envolvia diferentes grupos de trabalhadores e profissionais especializados.
                                 </p>
                                 <p>
-                                    Essas obras demonstram o conhecimento que os antigos egípcios possuíam em áreas
-                                    como matemática, engenharia e arquitetura. O trabalho de diferentes pessoas era
-                                    necessário para construir e decorar essas grandes obras.
+                                    Os egípcios desenvolveram técnicas para movimentar grandes blocos de pedra e organizar 
+                                    as etapas das construções. Embora algumas técnicas ainda sejam estudadas pelos pesquisadores, 
+                                    sabe-se que o conhecimento de matemática, engenharia e arquitetura foi fundamental para a 
+                                    realização dessas obras.
                                 </p>
-                            </td>
-                        </tr>
-                    </table>
+                                <p>
+                                    Essas construções demonstram como a civilização egípcia possuía uma sociedade organizada e 
+                                   conhecimentos avançados para sua época. O resultado desse trabalho pode ser observado até 
+                                   hoje em monumentos que continuam preservados milhares de anos depois de sua construção.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-
                 <section>
-                    <table style="margin-left: auto; margin-right: auto; width: 80%;">
-                        <tr>
-                            <td style="padding: 20px; width: 70%;">
-                                <h2 style="color: #8A641F;">Fatos Surpreendentes sobre o Egito Antigo</h2>
+                    <h2>
+                        O Legado do Egito para o Mundo
+                    </h2>
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela colunas-1">
+                            <div class="coluna-tabela">
+                                <img alt="Maiores Legados do Egito" loading="lazy" src="../img/egito/Legado.jpeg"/>
                                 <p>
-                                    1. Aproximação temporal de Cleópatra: A rainha Cleópatra viveu mais perto da ida
-                                    do homem à Lua (1969) do que da construção da Grande Pirâmide de Gizé.
+                                    As construções e os conhecimentos desenvolvidos
+                                    pelos antigos egípcios deixaram marcas importantes
+                                    na história da humanidade...
                                 </p>
-                                <p>2. Origem de Cleópatra: Ela era descendente de gregos macedônios da dinastia ptolemaica.</p>
+                            </div>
+                        </div>
+                        <div class="linha-tabela colunas-3">
+                            <div class="coluna-tabela">
+                                <img alt="imagem da arquitetura das Piramides" loading="lazy" src="../img/egito/Arquitetura_Engenharia.jpeg"/>
+                                <h3>
+                                    Arquitetura e Engenharia
+                                </h3>
                                 <p>
-                                    3. Cerveja como pagamento: A cerveja era consumida diariamente por diferentes
-                                    classes sociais e também podia fazer parte do pagamento dos trabalhadores.
+                                    Os antigos egípcios desenvolveram técnicas de construção 
+                                    impressionantes, utilizando grandes blocos de pedra para 
+                                    criar pirâmides, templos e monumentos. Suas obras demonstravam 
+                                    conhecimentos de planejamento, organização e engenharia. Até 
+                                    hoje, essas construções são estudadas por pesquisadores que 
+                                    buscam compreender como foram realizadas com tanta precisão.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Dados matematicos antigos" loading="lazy" src="../img/egito/Matematica_medidas.jpeg"/>
+                                <h3>
+                                    Matemática e Medidas
+                                </h3>
+                                <p>
+                                    A matemática teve um papel importante no desenvolvimento da 
+                                    civilização egípcia. Os conhecimentos sobre cálculos, medidas 
+                                    e geometria eram utilizados para organizar plantações, 
+                                    construir monumentos e calcular espaços. Esses conhecimentos 
+                                    ajudaram os egípcios a desenvolver soluções para diferentes 
+                                    necessidades do cotidiano.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <img alt="Pilastras" loading="lazy" src="../img/egito/Influencia.jpeg"/>
+                                <h3>
+                                    Influência Arquitetônica
+                                </h3>
+                                <p>
+                                    A arquitetura egípcia deixou marcas importantes na história e nos 
+                                   estudos sobre construções antigas. Seus templos, colunas, esculturas 
+                                   e monumentos se tornaram referências para compreender o desenvolvimento 
+                                   da arquitetura ao longo do tempo. Além disso, a preservação dessas obras 
+                                   permite que novas gerações conheçam melhor a cultura e as técnicas 
+                                   utilizadas pelos antigos egípcios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="bloco-tabela">
+                        <div class="linha-tabela">
+                            <div class="coluna-tabela">
+                                <h2>
+                                    Fatos Surpreendentes sobre o Egito Antigo
+                                </h2>
+                                <p>
+                                    1. Cleópatra e a ida do homem à Lua: Apesar de ser conhecida como uma personagem do Egito 
+                                    Antigo, Cleópatra viveu em um período muito mais próximo da chegada do homem à Lua, em 
+                                    1969, do que da construção da Grande Pirâmide de Gizé. Isso mostra como a história do Egito
+                                    possui uma duração impressionante.
                                 </p>
                                 <p>
-                                    4. Gatos no Egito Antigo: Os gatos eram animais muito importantes para a sociedade
-                                    egípcia e estavam relacionados à religião e à deusa Bastet.
+                                    2. A origem de Cleópatra: Cleópatra VII era descendente de gregos macedônios da dinastia ptolemaica, 
+                                    uma família que passou a governar o Egito após as conquistas de Alexandre, o Grande. Mesmo assim, 
+                                    ela ficou conhecida como uma das governantes mais famosas da história egípcia.
                                 </p>
-                            </td>
-                            <td style="text-align: center; padding: 20px; width: 30%;">
-                                <h3 style="color: #8A641F;">Você sabia?</h3>
-                                <img alt="Gato" src="../img/egito/Gato.png" style="width: 200px;">
+                                <p>
+                                    3. A cerveja no Egito Antigo: A cerveja era uma bebida bastante comum entre os antigos egípcios e fazia 
+                                    parte da alimentação de diferentes grupos sociais. Em determinadas situações, também podia ser 
+                                    utilizada como parte do pagamento dos trabalhadores envolvidos em grandes construções.
+                                </p>
+                                <p>
+                                    4. A importância dos gatos: Os gatos eram animais muito valorizados no Egito Antigo, principalmente 
+                                    por sua relação com a religião e com a proteção dos lares. Eles também estavam associados à deusa 
+                                    Bastet, que representava aspectos como proteção, fertilidade e maternidade.
+                                </p>
+                            </div>
+                            <div class="coluna-tabela">
+                                <h3>
+                                    Você sabia?
+                                </h3>
+                                <img alt="Gato" loading="lazy" src="../img/egito/Gato.png"/>
                                 <p>
                                     Os gatos eram muito valorizados pelos antigos egípcios e apareciam em pinturas,
                                     esculturas e outros objetos. Eles também estavam relacionados à deusa Bastet, que
                                     era representada com características de gato.
                                 </p>
-                            </td>
-                        </tr>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </article>
+            <nav aria-label="Navegação do país" class="navegacao-pais">
+                <a href="../index.html#paises">
+                    Voltar aos países
+                </a>
+                <a href="../sobre.html">
+                    Sobre o Atlas
+                </a>
+            </nav>
         </main>
-
-        <!-- Rodapé -->
-        <footer>
-            <table style="background-color: #8A641F; width: 100%; border-collapse: collapse;">
-                <tr>
-                    <td style="text-align: center; padding: 18px;"><span style="color: #FFFFFF; font-size: 16px;"><b>ATLAS - Egito</b></span></td>
-                </tr>
-            </table>
+        <footer class="rodape">
+            <p>
+                ATLAS - Projeto Acadêmico | Egito
+            </p>
         </footer>
+        <a aria-label="Voltar ao início da página" class="voltar-topo" href="#topo" title="Voltar ao início">
+            ↑
+        </a>
     </body>
 </html>

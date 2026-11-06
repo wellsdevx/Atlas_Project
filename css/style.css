@@ -1,6 +1,6 @@
-/* ATLAS — CSS único para todas as páginas. Classes em português. */
+/* Estilos do Atlas */
 
-/* 1. Cores do site */
+/* Usado em: todas as páginas — cores usadas em todas as páginas */
 :root {
     --fundo: #051126;
     --azul: #35c9f4;
@@ -9,7 +9,7 @@
     --linha: rgba(76, 187, 235, 0.28);
 }
 
-/* 2. Configurações gerais */
+/* Usado em: todas as páginas — configuração do corpo, imagens e links de todo o Atlas */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body.site {
@@ -24,11 +24,11 @@ body.site {
     background-size: auto, 56px 56px, 56px 56px;
     line-height: 1.6;
 }
-a { color: inherit; } 
+a { color: inherit; }
 img { max-width: 100%; height: auto; }
 
 
-/* 3. Cabeçalho e menu */
+/* Usado em: início, Sobre, Créditos, Orçamento e os dez países — cabeçalho e menu */
 .cabecalho {
     background: rgba(4, 17, 37, 0.97);
     border-bottom: 1px solid var(--linha);
@@ -42,25 +42,26 @@ img { max-width: 100%; height: auto; }
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.marca {
+.cabecalho .marca {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.marca h1 { margin: 0; }
+.cabecalho .marca h1 { margin: 0; }
 
-.marca a {
+.cabecalho .marca a {
     font-size: 29px;
     font-weight: bold;
     letter-spacing: 5px;
     text-decoration: none;
 }
 
-.marca a::after {
+.cabecalho .marca a::after {
     content: ".";
     color: var(--azul);
 }
@@ -91,7 +92,7 @@ img { max-width: 100%; height: auto; }
     background: #14517c;
 }
 
-/* 4. Destaque da página inicial */
+/* Usado em: Início, Sobre, França e Créditos — apresentação, botões e títulos */
 .inicio, .pagina {
     max-width: 1240px;
     margin: auto;
@@ -139,14 +140,12 @@ img { max-width: 100%; height: auto; }
     box-shadow: 0 0 32px rgba(23, 163, 227, 0.32);
 }
 
-.botao span { margin-left: 20px; }
-.imagem-destaque { text-align: center; }
 .globo { width: 320px; filter: drop-shadow(0 0 20px #1688cc88); }
 .numeros { display: flex; flex-wrap: wrap; gap: 25px; margin-top: 30px; }
 .numeros strong { display: block; font-size: 22px; }
 .numeros small { color: var(--suave); font-size: 11px; }
 
-/* 5. Mapa e títulos das seções */
+/* Usado em: página inicial — mapa, seções e caixas compartilhadas com Sobre e Orçamento */
 .secao { margin: 30px 0 65px; }
 .titulo-secao { margin-bottom: 22px; }
 .titulo-secao h2 { margin: 5px 0; font-size: 34px; }
@@ -165,18 +164,8 @@ img { max-width: 100%; height: auto; }
     font-size: 12px;
 }
 .topo-mapa { color: var(--azul); font-weight: bold; }
-.ponto {
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    margin-right: 8px;
-    border-radius: 50%;
-    background: var(--azul);
-}
 .imagem-mapa img { display: block; width: 100%; }
-.legenda-mapa { color: var(--suave); font-size: 11px; text-align: right; }
-
-/* 6. Cartões dos países */
+/* Usado em: página inicial — cartões dos dez países */
 .grade-paises {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -186,8 +175,9 @@ img { max-width: 100%; height: auto; }
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 177px;
-    padding: 20px;
+    min-height: 0;
+    padding: 0 0 15px;
+    overflow: hidden;
     background: linear-gradient(155deg, #0d3152, #091d3a);
     border: 1px solid var(--linha);
     border-radius: 14px;
@@ -200,18 +190,10 @@ img { max-width: 100%; height: auto; }
     box-shadow: 0 12px 25px #005c9e55;
 }
 .numero-pais, .cartao-pais small { color: var(--suave); font-size: 12px; }
-.bandeira { font-size: 30px; margin: 10px 0 4px; }
-.cartao-pais strong { font-size: 19px; }
-.cartao-pais small { margin-top: 6px; }
-.seta {
-    position: absolute;
-    right: 17px;
-    bottom: 14px;
-    color: var(--azul);
-    font-size: 21px;
-}
+.cartao-pais strong { font-size: 19px; margin: 0 15px; }
+.cartao-pais small { margin: 2px 15px 0; }
 
-/* 7. Bloco Sobre da página inicial */
+/* Usado em: index.html e creditos.html: caixas de resumo */
 .resumo-sobre {
     display: flex;
     justify-content: space-between;
@@ -232,7 +214,7 @@ img { max-width: 100%; height: auto; }
 }
 .resumo-sobre a:hover { background: #14517c; }
 
-/* 8. Sobre e Créditos: usar estas classes no HTML dessas páginas */
+/* Usado em: sobre.html, creditos.html e orcamento.html: conteúdo e títulos */
 .pagina { padding-top: 40px; }
 .titulo-pagina { font-size: 38px; margin: 0 0 10px; }
 .descricao-pagina { color: var(--suave); }
@@ -242,10 +224,10 @@ img { max-width: 100%; height: auto; }
     gap: 20px;
     margin-top: 25px;
 }
-.cartao-pagina h2, .cartao-pagina h3 { color: var(--azul); }
+.cartao-pagina h2 { color: var(--azul); }
 .cartao-pagina p { color: var(--suave); }
 
-/* 9. Rodapé */
+/* Usado em: início, Sobre, Créditos, Orçamento e os dez países — rodapé */
 .rodape {
     padding: 25px;
     text-align: center;
@@ -256,7 +238,7 @@ img { max-width: 100%; height: auto; }
 .rodape p { margin: 0; }
 
 
-/* 10. Tabela da página Créditos */
+/* Usado em: Créditos — tabelas e participantes */
 
 .area-tabela {
     overflow-x: auto;
@@ -285,14 +267,14 @@ img { max-width: 100%; height: auto; }
 }
 
 
-/* 11. Ajustes para telas menores */
+/* Usado em: index.html, sobre.html e creditos.html: ajustes para telas menores */
 @media (max-width: 1000px) {
     .grade-paises { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 760px) {
     .topo { text-align: center; }
-    .marca { justify-content: center; }
-    .menu a { padding: 12px; }
+    .cabecalho .marca { justify-content: center; }
+    .menu a { padding: 9px; }
     .inicio, .pagina { padding-left: 16px; padding-right: 16px; }
     .destaque { display: block; padding: 45px 0; }
     .texto-destaque h2 { font-size: 36px; }
@@ -304,4 +286,842 @@ img { max-width: 100%; height: auto; }
 }
 @media (max-width: 390px) {
     .grade-paises, .grade-pagina { grid-template-columns: 1fr; }
+}
+
+/* Usado em: página inicial — fotografias dos cartões */
+.cartao-pais .foto-pais {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--linha);
+}
+.cartao-pais .numero-pais {
+    margin: 14px 15px 4px;
+}
+
+/* Usado em: os dez países — fundo, títulos, botões e navegação */
+.site.pais {
+    --cor-pais: #35c9f4;
+    --luz-pais: rgba(53, 201, 244, 0.12);
+    background-image:
+        radial-gradient(circle at 90% 8%, var(--luz-pais), transparent 33%),
+        linear-gradient(#1b395533 1px, transparent 1px),
+        linear-gradient(90deg, #1b395533 1px, transparent 1px);
+}
+.pagina-pais {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 26px 20px 50px;
+}
+.identidade-pais {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 0 0 22px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--linha);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--cor-pais);
+}
+.identidade-pais a {
+    text-decoration: none;
+    color: var(--suave);
+    letter-spacing: 0;
+}
+.identidade-pais a:hover {
+    color: white;
+}
+.pagina-pais h1, .pagina-pais h2, .pagina-pais h3 {
+    line-height: 1.24;
+}
+.pagina-pais h1 {
+    color: #fff;
+    font-size: clamp(2.2rem, 5vw, 3.7rem);
+}
+.pagina-pais h2 {
+    color: var(--cor-pais);
+}
+.pagina-pais h3 {
+    color: #f3f9ff;
+}
+.pagina-pais a {
+    text-underline-offset: 3px;
+}
+.navegacao-pais {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    border-top: 1px solid var(--linha);
+    padding-top: 20px;
+}
+.navegacao-pais a, .link-retorno {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    color: var(--texto);
+    text-decoration: none;
+    background: #11375a;
+}
+.navegacao-pais a:hover, .link-retorno:hover {
+    border-color: var(--cor-pais);
+    background: #185079;
+}
+.voltar-topo {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #6ce0ff;
+    border-radius: 50%;
+    background: #14517c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 5px 20px #0008;
+}
+.voltar-topo:hover, .voltar-topo:focus-visible {
+    background: #1c6d9d;
+}
+
+/* Usado em: México, Grécia, Egito, Alemanha e Austrália: cartões, colunas e tabelas */
+.conteudo-tabelas article > section {
+    margin-bottom: 28px;
+}
+.conteudo-tabelas .bloco-tabela {
+    margin: 0 0 22px;
+}
+.conteudo-tabelas .linha-tabela {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 14px;
+}
+.conteudo-tabelas .colunas-1 {
+    grid-template-columns: 1fr;
+}
+.conteudo-tabelas .colunas-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.conteudo-tabelas .colunas-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.conteudo-tabelas .coluna-tabela {
+    min-width: 0;
+    padding: 22px;
+    background: linear-gradient(150deg, #11304e, #0b213a);
+    border: 1px solid var(--linha);
+    border-radius: 12px;
+}
+.conteudo-tabelas .linha-destaque > .coluna-tabela {
+    border-top: 2px solid var(--cor-pais);
+}
+.conteudo-tabelas .coluna-tabela.linha-titulo {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--linha);
+    border-radius: 0;
+    padding: 10px 0 6px;
+}
+.conteudo-tabelas .coluna-tabela img {
+    display: block;
+    max-height: 270px;
+    margin: 12px auto;
+    object-fit: contain;
+    border-radius: 7px;
+}
+.conteudo-tabelas h1 {
+    margin: 0 0 13px;
+}
+.conteudo-tabelas h2 {
+    margin: 8px 0 15px;
+}
+.conteudo-tabelas h3 {
+    margin: 14px 0 6px;
+}
+.conteudo-tabelas p {
+    color: #d6e6f4;
+}
+.conteudo-tabelas li {
+    margin-bottom: 16px;
+}
+.conteudo-tabelas .tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    background: #102d49;
+}
+.conteudo-tabelas .tabela-dados th, .conteudo-tabelas .tabela-dados td {
+    border: 1px solid #42617a;
+    padding: 10px;
+    text-align: left;
+}
+.conteudo-tabelas .tabela-dados th {
+    color: var(--cor-pais);
+}
+.conteudo-tabelas .tabela-dados img {
+    width: 90px;
+    max-height: 95px;
+    object-fit: contain;
+}
+.conteudo-tabelas .tabela-dados a {
+    overflow-wrap: anywhere;
+}
+/* Usado em: Austrália — distribuição dos cartões */
+.conteudo-australia .bloco-tabela {
+    padding-bottom: 5px;
+}
+.conteudo-australia .coluna-tabela img {
+    max-height: 230px;
+}
+.conteudo-australia .colunas-3 {
+    grid-template-columns: 150px 180px 1fr;
+    gap: 0;
+    margin-bottom: 9px;
+    border: 1px solid var(--linha);
+    border-radius: 9px;
+    background: #13314e;
+}
+.conteudo-australia .colunas-3 > .coluna-tabela {
+    border: 0;
+    background: transparent;
+    padding: 12px;
+}
+.conteudo-australia .colunas-3 > .coluna-tabela img {
+    max-height: 105px;
+    margin: 0 auto;
+}
+.conteudo-australia .colunas-3 > .coluna-tabela:nth-child(2) {
+    color: var(--cor-pais);
+    font-weight: bold;
+}
+/* Usado em: Austrália — áreas de imagens */
+.conteudo-australia .foto-nao-enviada {
+    display: block;
+    background: #173b58;
+    border: 1px dashed #5d839d;
+    border-radius: 7px;
+    padding: 15px 8px;
+    color: #d6e6f4;
+    text-align: center;
+}
+
+/* Usado em: México — cores e tamanhos das imagens */
+.conteudo-mexico .coluna-tabela {
+    border-color: #25634f;
+}
+.conteudo-mexico .coluna-tabela img {
+    max-height: 260px;
+}
+.conteudo-mexico .tabela-dados {
+    font-size: 13px;
+}
+
+/* Usado em: Austrália — blocos de aprofundamento */
+.bloco-australia {
+    margin: 12px 0;
+    background: #102f4b;
+    border: 1px solid var(--linha);
+    border-radius: 10px;
+}
+.bloco-australia summary {
+    cursor: pointer;
+    padding: 18px 20px;
+    color: var(--cor-pais);
+    font-weight: bold;
+}
+.bloco-australia[open] summary {
+    border-bottom: 1px solid var(--linha);
+}
+.bloco-australia .texto-complementar {
+    padding: 10px 20px 22px;
+}
+.bloco-australia .texto-complementar h3 {
+    margin-top: 22px;
+    color: var(--cor-pais);
+}
+.bloco-australia .texto-complementar p {
+    color: #d7e8f4;
+}
+
+/* Usado em: Japão, Canadá e Itália — introdução, galerias e cartões */
+.editorial .panel {
+    padding: 22px;
+    margin: 0 0 18px;
+    background: linear-gradient(145deg, #0e2c48, #0a1e36);
+    border: 1px solid var(--linha);
+    border-radius: 14px;
+}
+.editorial .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 28px;
+}
+.editorial .country-heading {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.editorial .flag {
+    width: 110px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+.editorial .intro h1 {
+    margin: 0;
+}
+.editorial .subtitle {
+    color: var(--cor-pais);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.editorial .intro-text {
+    font-size: 17px;
+    color: #d4e6f5;
+}
+.editorial .hero-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.editorial .section-title {
+    border-bottom: 1px solid var(--linha);
+    padding-bottom: 12px;
+    margin: 0 0 18px;
+}
+.editorial .period-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+.editorial .period-card, .editorial .info-card, .editorial .artwork-card, .editorial .fact-card {
+    background: #153955;
+    border: 1px solid #326080;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.editorial .period-card img {
+    display: block;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+.editorial .period-copy, .editorial .artwork-copy, .editorial .info-copy, .editorial .fact-copy {
+    padding: 12px;
+}
+.editorial h3 {
+    margin: 0 0 5px;
+    font-size: 17px;
+}
+.editorial p {
+    margin-top: 5px;
+}
+.editorial .split-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.editorial .info-list {
+    display: grid;
+    gap: 12px;
+}
+.editorial .info-card {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: center;
+}
+.editorial .info-card img {
+    width: 110px;
+    height: 95px;
+    object-fit: cover;
+}
+.editorial .artwork-grid, .editorial .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 14px;
+}
+.editorial .artwork-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    display: block;
+}
+.editorial .fact-card {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+}
+.editorial .fact-card img {
+    width: 90px;
+    height: 92px;
+    object-fit: cover;
+}
+/* Usado em: Suíça — destinos e oportunidades */
+.layout-suica .secao-destinos, .layout-suica .secao-carreira {
+    padding: 24px 0;
+}
+.layout-suica .destinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.layout-suica .card {
+    display: grid;
+    grid-template-columns: 42% 1fr;
+    gap: 15px;
+    background: #102d4b;
+    border: 1px solid var(--linha);
+    border-radius: 12px;
+    padding: 12px;
+}
+.layout-suica .imagem-card {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.layout-suica .card h3 {
+    margin: 4px 0 8px;
+}
+.layout-suica .card p {
+    font-size: 14px;
+}
+.layout-suica .oportunidades {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+.layout-suica .oportunidade {
+    padding: 22px;
+    background: #102d4b;
+    border: 1px solid var(--linha);
+    border-radius: 12px;
+}
+
+/* Usado em: França — abertura, museus, artistas e moda */
+.layout-franca .hero {
+    min-height: 400px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 14px;
+    overflow: hidden;
+    color: white;
+}
+.layout-franca .hero h1 {
+    font-size: clamp(3.5rem, 9vw, 6.5rem);
+    margin: 4px 0 16px;
+}
+.layout-franca .introducao {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 22px;
+    padding: 32px 20px;
+    border-bottom: 1px solid var(--linha);
+}
+.layout-franca .etiqueta {
+    font-size: 12px;
+    color: var(--cor-pais);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.layout-franca .titulo {
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    margin: 8px 0 22px;
+}
+.layout-franca .centralizado {
+    text-align: center;
+}
+.layout-franca .secao {
+    padding: 28px 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+.layout-franca .secao.fundo {
+    background: #102a47;
+    border: 1px solid var(--linha);
+}
+.layout-franca .arte-grid, .layout-franca .moda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 22px;
+}
+.layout-franca .imagem-grande img, .layout-franca .moda-imagem img {
+    width: 100%;
+    max-height: 315px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.layout-franca .cards, .layout-franca .artistas-grid, .layout-franca .marcas-grid, .layout-franca .tendencias-grid {
+    display: grid;
+    gap: 16px;
+}
+.layout-franca .cards {
+    grid-template-columns: repeat(3,1fr);
+}
+.layout-franca .artistas-grid, .layout-franca .marcas-grid, .layout-franca .tendencias-grid {
+    grid-template-columns: repeat(4,1fr);
+}
+.layout-franca .card, .layout-franca .artista, .layout-franca .marca, .layout-franca .tendencia {
+    min-width: 0;
+    padding: 16px;
+    background: #153452;
+    border: 1px solid #355477;
+    border-radius: 11px;
+}
+.layout-franca .card-img img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.layout-franca .card-conteudo h3 {
+    margin: 12px 0;
+}
+.layout-franca .artista-numero, .layout-franca .tendencia span {
+    color: var(--cor-pais);
+    font-weight: bold;
+}
+.layout-franca .marca a, .layout-franca .card a {
+    color: #b0e8ff;
+}
+/* Usado em: os dez países — colunas adaptadas para tablet e celular */
+@media (max-width: 930px) {
+    .conteudo-tabelas .colunas-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .layout-franca .artistas-grid, .layout-franca .marcas-grid, .layout-franca .tendencias-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .layout-franca .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .editorial .period-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 680px) {
+    .pagina-pais {
+        padding: 20px 14px 38px;
+    }
+    .identidade-pais {
+        font-size: 11px;
+    }
+    .conteudo-tabelas .linha-tabela, .conteudo-tabelas .colunas-3, .conteudo-tabelas .colunas-4,
+    .editorial .intro, .editorial .split-grid, .editorial .artwork-grid, .editorial .facts-grid,
+    .layout-suica .destinos, .layout-suica .oportunidades,
+    .layout-franca .arte-grid, .layout-franca .moda, .layout-franca .cards {
+        grid-template-columns: 1fr;
+    }
+    .conteudo-tabelas .coluna-tabela {
+        padding: 15px;
+    }
+    .conteudo-australia .colunas-3 > .coluna-tabela {
+        padding: 8px 12px;
+    }
+    .editorial .panel {
+        padding: 14px;
+    }
+    .editorial .period-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .editorial .info-card {
+        grid-template-columns: 90px 1fr;
+    }
+    .editorial .info-card img {
+        width: 90px;
+    }
+    .layout-suica .card {
+        grid-template-columns: 1fr;
+    }
+    .layout-suica .imagem-card {
+        height: 195px;
+    }
+    .layout-franca .artistas-grid, .layout-franca .marcas-grid, .layout-franca .tendencias-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .layout-franca .hero {
+        min-height: 310px;
+    }
+    .voltar-topo {
+        width: 42px;
+        height: 42px;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+@media (max-width: 390px) {
+    .editorial .period-grid, .layout-franca .artistas-grid, .layout-franca .marcas-grid, .layout-franca .tendencias-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Usado em: início, Sobre, Créditos, Orçamento e os dez países — cabeçalho e menu no celular */
+@media (max-width: 680px) {
+    .topo {
+        flex-direction: column;
+        align-items: center;
+        padding: 14px 12px;
+        gap: 8px;
+    }
+    .menu {
+        justify-content: center;
+        gap: 4px;
+    }
+    .menu a {
+        padding: 7px 9px;
+        font-size: 12px;
+    }
+}
+
+/* Usado em: início, Sobre, Créditos, Orçamento e os dez países — menu expansível Buscar no Atlas */
+.busca-atlas {
+    position: relative;
+    margin-left: auto;
+    font-size: 13px;
+    z-index: 20;
+}
+.busca-atlas summary {
+    padding: 10px 15px;
+    color: white;
+    background: #0c2944;
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+}
+.busca-atlas summary::-webkit-details-marker { display: none; }
+.busca-atlas summary:hover, .busca-atlas[open] summary { background: #15527e; }
+.busca-atlas .busca-conteudo {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: min(370px, 90vw);
+    max-height: 65vh;
+    overflow-y: auto;
+    padding: 14px;
+    background: #0b2441;
+    border: 1px solid var(--linha);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 18px 35px #0009;
+}
+.busca-conteudo p { margin: 0 0 10px; color: var(--suave); }
+.busca-conteudo ul { margin: 0; padding: 0; list-style: none; }
+.busca-conteudo li { border-bottom: 1px solid var(--linha); }
+.busca-conteudo li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 4px;
+    text-decoration: none;
+}
+.busca-conteudo li a:hover { color: var(--azul); }
+.busca-conteudo li a small { color: var(--suave); text-align: right; }
+.busca-conteudo .busca-ajuda { margin: 12px 0 0; font-size: 11px; }
+.menu a[aria-current="page"] { color: var(--azul); }
+
+/* Usado em: Créditos — bandeiras clicáveis e identificações */
+.link-pais-credito {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    margin: 2px 8px 2px 0;
+    background: #103553;
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.link-pais-credito:hover, .link-pais-credito:focus-visible {
+    background: #1c5279;
+    border-color: var(--azul);
+}
+.bandeira-credito {
+    display: block;
+    width: 64px;
+    height: 44px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.selo-credito {
+    display: inline-block;
+    padding: 3px 7px;
+    border: 1px solid var(--linha);
+    border-radius: 5px;
+    color: var(--azul);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Usado em: Austrália — blocos expansíveis de fauna e temas */
+.conteudo-australia .grupo-fauna,
+.conteudo-australia .secao-expansivel {
+    margin: 12px 0;
+}
+.conteudo-australia .grupo-fauna > .bloco-tabela {
+    padding: 8px 16px 18px;
+}
+.conteudo-australia .secao-expansivel .texto-complementar {
+    padding-top: 14px;
+}
+.bloco-australia summary:hover { background: #183e5a; }
+
+/* Usado em: França — alinhamento de botões e marcas */
+.layout-franca .marcas-grid .marca,
+.layout-franca .cards .card {
+    display: flex;
+    flex-direction: column;
+}
+.layout-franca .marcas-grid .marca p { flex: 1; }
+.layout-franca .marcas-grid .marca a,
+.layout-franca .cards .card a {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 7px 12px;
+    border: 1px solid #547b98;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.layout-franca .cards .card-conteudo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 8px;
+}
+.layout-franca .cards .card-conteudo p { flex: 1; }
+.layout-franca .marca a:hover,
+.layout-franca .card a:hover { background: #205478; }
+
+/* Usado em: início, Sobre, Créditos, Orçamento e os dez países — cabeçalho em telas médias */
+@media (max-width: 1150px) {
+    .topo { justify-content: center; }
+    .busca-atlas { margin-left: 0; }
+    .menu { flex: 1 1 100%; justify-content: center; }
+}
+/* Usado em: início, Sobre, Créditos, Orçamento e os dez países — menu de busca e tabela de créditos no celular */
+@media (max-width: 680px) {
+    .tabela-creditos th, .tabela-creditos td { padding: 10px; }
+}
+
+/* Usado em: Orçamento e Contato — campos e botões dos formulários */
+.campos-formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 22px;
+}
+.campos-formulario label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.campos-formulario input, .campos-formulario select, .campos-formulario textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    color: var(--texto);
+    background: #091e35;
+    border: 1px solid #5d849e;
+    border-radius: 7px;
+    font: inherit;
+}
+.campos-formulario input:focus-visible, .campos-formulario select:focus-visible, .campos-formulario textarea:focus-visible {
+    outline: 2px solid var(--azul);
+    outline-offset: 2px;
+}
+.acoes-formulario { display: flex; gap: 12px; flex-wrap: wrap; }
+.acoes-formulario button {
+    padding: 11px 18px;
+    color: white;
+    background: #16618c;
+    border: 1px solid var(--azul);
+    border-radius: 8px;
+    font: inherit;
+    cursor: pointer;
+}
+.acoes-formulario button[type="reset"] { background: transparent; }
+.acoes-formulario button:hover { background: #2283ab; }
+
+/* Usado em: orcamento.html e menu de busca: ajustes no celular */
+@media (max-width: 760px) {
+    .campos-formulario { grid-template-columns: 1fr; }
+    .busca-conteudo li a { align-items: flex-start; flex-direction: column; gap: 0; }
+}
+
+/* Usado em: México, Grécia, Egito e Alemanha: bandeiras junto aos títulos */
+.conteudo-tabelas .coluna-tabela h1 img {
+    display: inline-block;
+    width: 95px;
+    height: 65px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 0 12px 0 0;
+}
+
+
+/* Usado em: as dez transições — telas pretas, vídeos MP4 e botão para pular */
+body.tela-transicao {
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.video-transicao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+}
+
+.texto-transicao {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+.pular-transicao {
+    position: fixed;
+    right: 20px;
+    bottom: 18px;
+    z-index: 2;
+    padding: 10px 15px;
+    border: 1px solid #ffffffa0;
+    border-radius: 6px;
+    background: #071428d9;
+    color: white;
+    font: 14px Arial, sans-serif;
+    text-decoration: none;
+}
+
+.pular-transicao:hover,
+.pular-transicao:focus-visible {
+    background: #16426c;
 }

@@ -6,9 +6,9 @@
     <title>Atlas — Explore o Mundo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="site">
+<body class="site" id="topo">
 
-    <!-- Cabeçalho: logo e menu de navegação -->
+    <!-- Cabeçalho -->
  
     <header class="cabecalho">
         <div class="topo">
@@ -17,10 +17,31 @@
                 <span class="subtitulo">Explore o Mundo</span>
             </div>
 
+            <details class="busca-atlas">
+                <summary>Buscar no Atlas</summary>
+                <div class="busca-conteudo">
+                    <p>Escolha um país ou assunto:</p>
+                    <ul>
+                    <li><a href="transicoes/mexico.html"><strong>México</strong><small>Música, mitologia e Día de los Muertos</small></a></li>
+                    <li><a href="transicoes/grecia.html"><strong>Grécia</strong><small>Gastronomia e culinária</small></a></li>
+                    <li><a href="transicoes/egito.html"><strong>Egito</strong><small>Monumentos e engenharia</small></a></li>
+                    <li><a href="transicoes/italia.html"><strong>Itália</strong><small>História e Roma Antiga</small></a></li>
+                    <li><a href="transicoes/canada.html"><strong>Canadá</strong><small>Natureza, biomas e animais</small></a></li>
+                    <li><a href="transicoes/alemanha.html"><strong>Alemanha</strong><small>Guerras, reunificação e política</small></a></li>
+                    <li><a href="transicoes/suica.html"><strong>Suíça</strong><small>Turismo, Alpes e trabalho</small></a></li>
+                    <li><a href="transicoes/australia.html"><strong>Austrália</strong><small>Fauna, biodiversidade e cultura</small></a></li>
+                    <li><a href="transicoes/japao.html"><strong>Japão</strong><small>Artes visuais e artistas</small></a></li>
+                    <li><a href="transicoes/franca.html"><strong>França</strong><small>Arte, museus e moda</small></a></li>
+                    </ul>
+                    <p class="busca-ajuda">Para localizar uma palavra no texto, use Ctrl+F no computador.</p>
+                </div>
+            </details>
+
             <nav class="menu" aria-label="Navegação principal">
                 <a href="index.html">Início</a>
                 <a href="#mapa">Mapa</a>
                 <a href="#paises">Países</a>
+                <a href="orcamento.html">Orçamento e Contato</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="creditos.html">Créditos</a>
             </nav>
@@ -29,25 +50,20 @@
 
 
     <main class="inicio">
-        <!-- 1. Apresentação do site -->
+        <!-- Apresentação -->
         <section class="destaque" aria-labelledby="inicio-titulo">
             <div class="texto-destaque">
                 <p class="selo">ATLAS / EXPLORAÇÃO CULTURAL</p>
                 <h2 id="inicio-titulo">O mundo está cheio de <span>histórias para descobrir.</span></h2>
                 <p>Explore dez países por meio da história, da arte, da natureza e da cultura. Conheça nossos destinos e comece sua viagem pelo Atlas.</p>
-                <a class="botao" href="#paises">Explorar países <span aria-hidden="true">↗</span></a>
-                <div class="numeros">
-                    <div><strong>10</strong><small>Países</small></div>
-                    <div><strong>10</strong><small>Temas culturais</small></div>
-                    <div><strong>01</strong><small>Mundo para explorar</small></div>
-                </div>
+                <a class="botao" href="#paises">Explorar países</a>
             </div>
-            <div class="imagem-destaque" aria-hidden="true">
+            <div class="imagem-destaque" aria-hidden="true" style="text-align: center;">
                 <img class="globo" src="img/globo-atlas.svg" alt="Globo terrestre com destinos do Atlas destacados" width="360" height="360">
             </div>
         </section>
 
-        <!-- 2. Mapa ilustrativo -->
+        <!-- Mapa -->
         <section class="secao" id="mapa" aria-labelledby="mapa-titulo">
             <div class="titulo-secao">
                 <div class="selo-secao">UMA VIAGEM PELO MUNDO / 10 DESTINOS</div>
@@ -56,21 +72,21 @@
             </div>
             <div class="painel-mapa">
                 <div class="topo-mapa">
-                    <span><span class="ponto"></span>ATLAS / MAPA-MÚNDI</span>
+                    <span><span  style="display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--azul);"></span>ATLAS / MAPA-MÚNDI</span>
                     <span>ILUSTRAÇÃO GLOBAL</span>
                 </div>
                 <div class="imagem-mapa">
                     <img src="img/mapa-atlas-com-nomes.svg" alt="Mapa-múndi com os dez países do Atlas destacados e identificados em português." width="1200" height="560">
                 </div>
                 <div class="aviso-mapa">
-                    <span>● Explore dez culturas e histórias</span>
+                    <span>Explore dez culturas e histórias</span>
                     <span>ESCOLHA UM PAÍS NOS CARTÕES ABAIXO</span>
                 </div>
             </div>
-            <p class="legenda-mapa">Ilustração estilizada para representar a exploração global do Atlas.</p>
+            <p style="color: var(--suave); font-size: 11px; text-align: right;">Ilustração estilizada para representar a exploração global do Atlas.</p>
         </section>
 
-        <!-- 3. Cartões com links para cada país -->
+        <!-- Países -->
         <section class="secao" id="paises" aria-labelledby="paises-titulo">
             <div class="titulo-secao">
                 <div class="selo-secao">DESCUBRA O ATLAS</div>
@@ -79,91 +95,82 @@
             </div>
 
             <div class="grade-paises">
-                <a class="cartao-pais" href="paginas/mexico.html">
+                <a class="cartao-pais" href="transicoes/mexico.html">
                     <span class="numero-pais">01 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇲🇽</span>
+                    <img class="foto-pais" src="img/mexico/dia-dos-dead-altar.jpg" alt="Foto representando México" loading="lazy">
                     <strong>México</strong>
                     <small>Música e mitologia</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/grecia.html">
+                <a class="cartao-pais" href="transicoes/grecia.html">
                     <span class="numero-pais">02 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇬🇷</span>
+                    <img class="foto-pais" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Moussaka_and_Greek_Salad_at_a_taverna_in_Greece.jpg/960px-Moussaka_and_Greek_Salad_at_a_taverna_in_Greece.jpg" alt="Foto representando Grécia" loading="lazy" style="background: repeating-linear-gradient(180deg, #f3f7ff 0 12px, #125ab7 12px 24px);">
                     <strong>Grécia</strong>
                     <small>Gastronomia</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/egito.html">
+                <a class="cartao-pais" href="transicoes/egito.html">
                     <span class="numero-pais">03 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇪🇬</span>
+                    <img class="foto-pais" src="img/egito/Paisagem.jpg" alt="Foto representando Egito" loading="lazy">
                     <strong>Egito</strong>
                     <small>Monumentos históricos</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/italia.html">
+                <a class="cartao-pais" href="transicoes/italia.html">
                     <span class="numero-pais">04 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇮🇹</span>
+                    <img class="foto-pais" src="img/italia/romaantiga.jpg" alt="Foto representando Itália" loading="lazy">
                     <strong>Itália</strong>
                     <small>História</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/canada.html">
+                <a class="cartao-pais" href="transicoes/canada.html">
                     <span class="numero-pais">05 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇨🇦</span>
+                    <img class="foto-pais" src="img/canada/montanhaselago.jpg" alt="Foto representando Canadá" loading="lazy">
                     <strong>Canadá</strong>
                     <small>Natureza</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/alemanha.html">
+                <a class="cartao-pais" href="transicoes/alemanha.html">
                     <span class="numero-pais">06 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇩🇪</span>
+                    <img class="foto-pais" src="img/alemanha/Berlim.jpg" alt="Foto representando Alemanha" loading="lazy">
                     <strong>Alemanha</strong>
                     <small>Guerras e impactos políticos</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/suica.html">
+                <a class="cartao-pais" href="transicoes/suica.html">
                     <span class="numero-pais">07 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇨🇭</span>
+                    <img class="foto-pais" src="img/suica/banner-suica.png" alt="Foto representando Suíça" loading="lazy">
                     <strong>Suíça</strong>
                     <small>Turismo e oportunidades</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/australia.html">
+                <a class="cartao-pais" href="transicoes/australia.html">
                     <span class="numero-pais">08 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇦🇺</span>
+                    <img class="foto-pais" src="img/australia/australia.p.jpg" alt="Foto representando Austrália" loading="lazy">
                     <strong>Austrália</strong>
                     <small>Biodiversidade</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/japao.html">
+                <a class="cartao-pais" href="transicoes/japao.html">
                     <span class="numero-pais">09 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇯🇵</span>
+                    <img class="foto-pais" src="img/japao/paisagem-japao.jpg" alt="Foto representando Japão" loading="lazy">
                     <strong>Japão</strong>
                     <small>Evolução das artes visuais</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
-                <a class="cartao-pais" href="paginas/franca.html">
+                <a class="cartao-pais" href="transicoes/franca.html">
                     <span class="numero-pais">10 / DESTINO</span>
-                    <span class="bandeira" aria-hidden="true">🇫🇷</span>
+                    <img class="foto-pais" src="img/franca/louvre.png" alt="Foto representando França" loading="lazy">
                     <strong>França</strong>
                     <small>Museus, artistas e moda</small>
-                    <span class="seta" aria-hidden="true">↗</span>
                 </a>
             </div>
         </section>
 
-        <!-- 4. Resumo e link para a página Sobre -->
+        <!-- Sobre -->
         <section class="resumo-sobre" aria-labelledby="sobre-resumo">
             <div>
                 <h2 id="sobre-resumo">Um mundo de conhecimentos</h2>
                 <p>O Atlas é um projeto acadêmico desenvolvido em equipe. Cada país apresenta um assunto diferente, mas todos fazem parte da mesma experiência de exploração.</p>
             </div>
-            <a href="sobre.html">Sobre&nbsp;o&nbsp;projeto↗</a>
+            <a href="sobre.html">Sobre&nbsp;o&nbsp;projeto</a>
         </section>
     </main>
 
     <footer class="rodape">
         <p>ATLAS - Projeto Acadêmico</p>
     </footer>
+    <a class="voltar-topo" href="#topo" aria-label="Voltar ao início da página" title="Voltar ao início">↑</a>
 </body>
 </html>

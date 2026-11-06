@@ -1,103 +1,221 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Atlas - Itália</title>
-    </head>
-    <body style="font-family: Arial, sans-serif; margin: 0; color: #202A35; background-color: #FFF9F2;">
-        <!-- Cabeçalho e navegação principal -->
-        <header>
-            <nav>
-                <table style="background-color: #008C45; width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td style="padding: 12px; width: 38%;">
-                            <a href="../index.html" style="color: white; text-decoration: none;"><span style="font-size: 32px;"><b>ATLAS</b></span></a>
-                            <span style="color: white; font-size: 13px;">| Itália</span>
-                        </td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html" style="color: white; text-decoration: none;"><b>Início</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html#mapa" style="color: white; text-decoration: none;"><b>Mapa</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../index.html#paises" style="color: white; text-decoration: none;"><b>Países</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../sobre.html" style="color: white; text-decoration: none;"><b>Sobre</b></a></td>
-                        <td style="text-align: center; padding: 12px;"><a href="../creditos.html" style="color: white; text-decoration: none;"><b>Créditos</b></a></td>
-                    </tr>
-                </table>
-            </nav>
-        </header>
-
-        <!-- Conteúdo principal -->
-        <main>
-            <article>
-                <section>
-                    <div style="text-align: center;">
-                        <table style="background-color: #CDEAE0; width: 80%;">
-                            <tr>
-                                <td style="padding: 10px; width: 150px;"><img alt="Italiabandeira" height="60" src="../img/italia/italiabandeira.png" width="120"></td>
-                                <td style="padding: 10px;">
-                                    <h1 style="margin: 0; color: #0B1320;">ITÁLIA</h1>
-                                    <br>
-                                    <span style="color: #143B5C; font-size: 18px;"><b>História e Cultura</b></span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <ul style="list-style:none; padding:0;">
-                        <li>
-                            <div>
-                                <h2 style="color: #008C45;">ROMA ANTIGA (753 a.C. – 476 d.C.)</h2>
-                                <p>
-                                    A Roma Antiga foi uma das civilizações mais influentes da história, originada no
-                                    século VIII a.C. na península Itálica e estruturada em três grandes fases:
-                                    Monarquia, República e Império. Durante o seu auge imperial, os romanos
-                                    conquistaram vastos territórios ao redor do mar Mediterrâneo, deixando um legado
-                                    duradouro na política, no direito, na arquitetura e na língua latina, até que
-                                    divisões internas e invasões de povos germânicos levaram à queda do Império Romano
-                                    do Ocidente em 476 d.C.
-                                </p>
-                            </div>
-                            <img alt="imagem coliseu" src="../img/italia/romaantiga.jpg" style="width: 300px; height: 300px;">
-                        </li>
-                        <li>
-                            <div>
-                                <h2 style="color: #008C45;">RENASCIMENTO (Séculos XIV – XVI)</h2>
-                                <p>
-                                    O Renascimento foi um movimento cultural e científico surgido na Itália no século
-                                    XIV que marcou a transição da Idade Média para a Idade Moderna. Inspirado na
-                                    Antiguidade Clássica, ele colocou o ser humano no centro do universo (humanismo),
-                                    rompendo com o teocentrismo medieval. Esse período transformou a Europa ao
-                                    promover o pensamento crítico, a revolução científica e inovações artísticas
-                                    revolucionárias lideradas por gênios como Leonardo da Vinci.
-                                </p>
-                            </div>
-                            <img alt="imagem monalisa" src="../img/italia/monalisa.jpg" style="width: 300px; height: 300px;">
-                        </li>
-                        <li>
-                            <div>
-                                <h2 style="color: #008C45;">UNIFICAÇÃO (1861)</h2>
-                                <p>
-                                    A Unificação Italiana foi o processo político e militar do século XIX que
-                                    transformou uma península fragmentada em um único Estado-nação, consolidado com a
-                                    criação do Reino da Itália em 1861. Liderado pelo Reino de Piemonte-Sardenha — com
-                                    a diplomacia de Cavour e a força militar de Garibaldi —, o movimento expulsou o
-                                    domínio austríaco e unificou os territórios do norte e do sul sob ideais
-                                    nacionalistas e liberais.
-                                </p>
-                            </div>
-                            <img alt="imagem unificação" src="../img/italia/unificacao.jpg" style="width: 300px; height: 300px;">
-                        </li>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Itália - Atlas</title>
+    <link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body class="site pais" id="topo" style="--cor-pais: #6acc97; --luz-pais: rgba(62, 161, 91, 0.16);">
+    <header class="cabecalho">
+        <div class="topo">
+            <div class="marca">
+                <a href="../index.html">ATLAS</a>
+                <span class="subtitulo">Itália</span>
+            </div>
+            <details class="busca-atlas">
+                <summary>Buscar no Atlas</summary>
+                <div class="busca-conteudo">
+                    <p>Escolha um país ou assunto:</p>
+                    <ul>
+                    <li><a href="../transicoes/mexico.html"><strong>México</strong><small>Música, mitologia e Día de los Muertos</small></a></li>
+                    <li><a href="../transicoes/grecia.html"><strong>Grécia</strong><small>Gastronomia e culinária</small></a></li>
+                    <li><a href="../transicoes/egito.html"><strong>Egito</strong><small>Monumentos e engenharia</small></a></li>
+                    <li><a href="../transicoes/italia.html"><strong>Itália</strong><small>História e Roma Antiga</small></a></li>
+                    <li><a href="../transicoes/canada.html"><strong>Canadá</strong><small>Natureza, biomas e animais</small></a></li>
+                    <li><a href="../transicoes/alemanha.html"><strong>Alemanha</strong><small>Guerras, reunificação e política</small></a></li>
+                    <li><a href="../transicoes/suica.html"><strong>Suíça</strong><small>Turismo, Alpes e trabalho</small></a></li>
+                    <li><a href="../transicoes/australia.html"><strong>Austrália</strong><small>Fauna, biodiversidade e cultura</small></a></li>
+                    <li><a href="../transicoes/japao.html"><strong>Japão</strong><small>Artes visuais e artistas</small></a></li>
+                    <li><a href="../transicoes/franca.html"><strong>França</strong><small>Arte, museus e moda</small></a></li>
                     </ul>
-                </section>
-            </article>
-        </main>
+                    <p class="busca-ajuda">Para localizar uma palavra no texto, use Ctrl+F no computador.</p>
+                </div>
+            </details>
 
-        <!-- Rodapé -->
-        <footer>
-            <table style="background-color: #008C45; width: 100%; border-collapse: collapse;">
-                <tr>
-                    <td style="text-align: center; padding: 18px;"><span style="color: #FFFFFF; font-size: 16px;"><b>ATLAS - Itália</b></span></td>
-                </tr>
-            </table>
-        </footer>
-    </body>
+            <nav aria-label="Navegação principal" class="menu">
+                <a href="../index.html">Início</a>
+                <a href="../index.html#mapa">Mapa</a>
+                <a href="../index.html#paises">Países</a>
+                <a href="../orcamento.html">Orçamento e Contato</a>
+                <a href="../sobre.html">Sobre</a>
+                <a href="../creditos.html">Créditos</a>
+            </nav>
+        </div>
+    </header>
+    <main class="pagina-pais editorial">
+        <div class="identidade-pais">
+            <span>ATLAS / ITÁLIA</span>
+            <a href="../index.html#paises">Todos os países</a>
+        </div>
+
+        <section class="panel intro" id="sobre" aria-labelledby="page-title">
+            <div>
+                <div class="country-heading">
+                    <img loading="lazy" class="flag" src="../img/bandeiras/bandeira-italia.webp" alt="Bandeira da Itália">
+                    <div>
+                        <h1 id="page-title">ITÁLIA</h1>
+                        <p class="subtitle">História e Cultura</p>
+                    </div>
+                </div>
+                <p class="intro-text">
+                    A Itália possui um legado histórico fundamental para o Ocidente, sendo berço de impérios, sistemas jurídicos e movimentos artísticos de impacto global.
+                </p>
+            </div>
+            <img loading="lazy" class="hero-image" src="../img/italia/romaantiga.jpg" alt="Paisagem da Itália Antiga">
+        </section>
+
+        <section class="panel" aria-labelledby="periodos-title">
+            <h2 class="section-title" id="periodos-title">Linha do Tempo</h2>
+            <div class="period-grid">
+                <article class="period-card">
+                    <img loading="lazy" src="../img/italia/romaantiga.jpg" alt="Roma Antiga">
+                    <div class="period-copy">
+                        <h3>Roma Antiga</h3>
+                        <p>Expansão territorial e consolidação das bases do direito ocidental.</p>
+                    </div>
+                </article>
+                <article class="period-card">
+                    <img loading="lazy" src="../img/italia/idademedia.jpg" alt="Idade Média na Itália">
+                    <div class="period-copy">
+                        <h3>Idade Média</h3>
+                        <p>Período marcado pela descentralização política e a influência da Igreja.</p>
+                    </div>
+                </article>
+                <article class="period-card">
+                    <img loading="lazy" src="../img/italia/renascimento.jpg" alt="Renascimento Italiano">
+                    <div class="period-copy">
+                        <h3>Renascimento</h3>
+                        <p>Evolução cultural e artística fundamentada no humanismo.</p>
+                    </div>
+                </article>
+                <article class="period-card">
+                    <img loading="lazy" src="../img/italia/unificacao.jpg" alt="Unificação da Itália">
+                    <div class="period-copy">
+                        <h3>Unificação</h3>
+                        <p>Processo do século XIX que unificou os estados da península itálica.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="split-grid">
+            <section class="panel" aria-labelledby="tecnicas-title">
+                <h2 class="section-title" id="tecnicas-title">Patrimônio Cultural</h2>
+                <div class="info-list">
+                    <article class="info-card">
+                        <img loading="lazy" src="../img/italia/arquiteturaclassica.jpg" alt="Arquitetura clássica">
+                        <div class="info-copy">
+                            <h3>Arquitetura Clássica</h3>
+                            <p>Edificações históricas caracterizadas pelo uso de colunas e simetria.</p>
+                        </div>
+                    </article>
+                    <article class="info-card">
+                        <img loading="lazy" src="../img/italia/pintura.jpg" alt="Pintura italiana">
+                        <div class="info-copy">
+                            <h3>Pintura Renascentista</h3>
+                            <p>Obras focadas em perspectiva, proporção e realismo anatômico.</p>
+                        </div>
+                    </article>
+                    <article class="info-card">
+                        <img loading="lazy" src="../img/italia/escultura.jpg" alt="Esculturas em mármore">
+                        <div class="info-copy">
+                            <h3>Escultura em Mármore</h3>
+                            <p>Técnica clássica de lapidação para representação humana detalhada.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="panel" aria-labelledby="artistas-title">
+                <h2 class="section-title" id="artistas-title">Figuras Históricas</h2>
+                <div class="info-list">
+                    <article class="info-card">
+                        <img loading="lazy" src="../img/italia/juliocesar.jpg" alt="Júlio César">
+                        <div class="info-copy">
+                            <h3>Júlio César</h3>
+                            <p>Líder militar e político fundamental na transição da República para o Império.</p>
+                        </div>
+                    </article>
+                    <article class="info-card">
+                        <img loading="lazy" src="../img/italia/davinci.jpg" alt="Leonardo da Vinci">
+                        <div class="info-copy">
+                            <h3>Leonardo da Vinci</h3>
+                            <p>Polímata renascentista destacado nas artes, ciências e engenharia.</p>
+                        </div>
+                    </article>
+                    <article class="info-card">
+                        <img loading="lazy" src="../img/italia/garibaldi.jpg" alt="Giuseppe Garibaldi">
+                        <div class="info-copy">
+                            <h3>Giuseppe Garibaldi</h3>
+                            <p>Líder militar determinante no processo de unificação italiana.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <section class="panel" aria-labelledby="galeria-title">
+            <h2 class="section-title" id="galeria-title">Monumentos Históricos</h2>
+            <div class="artwork-grid">
+                <article class="artwork-card">
+                    <img loading="lazy" src="../img/italia/coliseu.jpg" alt="Coliseu">
+                    <div class="artwork-copy">
+                        <h3>Coliseu</h3>
+                        <p>Anfiteatro romano símbolo da Antiguidade.</p>
+                    </div>
+                </article>
+                <article class="artwork-card">
+                    <img loading="lazy" src="../img/italia/torredepisa.jpg" alt="Torre de Pisa">
+                    <div class="artwork-copy">
+                        <h3>Torre de Pisa</h3>
+                        <p>Campanário famoso por sua inclinação não intencional.</p>
+                    </div>
+                </article>
+                <article class="artwork-card">
+                    <img loading="lazy" src="../img/italia/capelasistina.jpg" alt="Capela Sistina">
+                    <div class="artwork-copy">
+                        <h3>Capela Sistina</h3>
+                        <p>Templo famoso pelos afrescos no teto.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="curiosidades-title">
+            <h2 class="section-title" id="curiosidades-title">Fatos Relevantes</h2>
+            <div class="facts-grid">
+                <article class="fact-card">
+                    <img loading="lazy" src="../img/italia/pizza.jpg" alt="Comida italiana">
+                    <div class="fact-copy">
+                        <h3>Tradição Gastronômica</h3>
+                        <p>Culinária reconhecida globalmente pelo desenvolvimento de massas e pizzas.</p>
+                    </div>
+                </article>
+                <article class="fact-card">
+                    <img loading="lazy" src="../img/italia/idiomalatim.jpg" alt="Idioma antigo">
+                    <div class="fact-copy">
+                        <h3>Origem Linguística</h3>
+                        <p>Berço do latim, idioma matriz de línguas neolatinas como o português.</p>
+                    </div>
+                </article>
+                <article class="fact-card">
+                    <img loading="lazy" src="../img/italia/mapapreunificacao.jpg" alt="Cidades Estado">
+                    <div class="fact-copy">
+                        <h3>Cidades-Estado</h3>
+                        <p>Antes do século XIX, a região era dividida em reinos e repúblicas independentes.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <nav aria-label="Navegação do país" class="navegacao-pais">
+            <a href="../index.html#paises">Voltar aos países</a>
+            <a href="../sobre.html">Sobre o Atlas</a>
+        </nav>
+    </main>
+    <footer class="rodape">
+        <p>ATLAS - Projeto Acadêmico | Itália</p>
+    </footer>
+    <a aria-label="Voltar ao início da página" class="voltar-topo" href="#topo" title="Voltar ao início">↑</a>
+</body>
 </html>
